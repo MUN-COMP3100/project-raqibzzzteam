@@ -1,6 +1,6 @@
 # project
-Raqib Muktadir
-Vilakshan Khanna
+[Raqib Muktadir, Vilakshan Khanna]
+
 
 
 
