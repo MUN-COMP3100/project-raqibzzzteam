@@ -2,10 +2,11 @@
 project-raqibzzzteam created by GitHub Classroom
 
 
-# Ideas
+# Rough Ideas [NOT FINAL YET]
 ### Restaurant Interface
-a webapp that compiles all restauarants in an area. The webapp gives a detailed information on menu, reviews, popularity, delivery, discussion page, restaurant location
-what backend and frontend might we need for this. Simple, and beginner friendly. Web app, node.js, javascript, etc. 
+a webapp that compiles all restauarants in an area. The webapp gives a detailed information on menu, reviews, popularity, delivery, discussion page, restaurant location\
+
+The backend and frontend might we need for this. Simple, and beginner friendly. Web app, node.js, javascript, etc. 
 
 
 
