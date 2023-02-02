@@ -1,5 +1,7 @@
-# project-raqibzzzteam
-project-raqibzzzteam created by GitHub Classroom
+# project
+Raqib Muktadir
+Vilakshan Khanna
+
 
 
 # Rough Ideas [NOT FINAL YET]
