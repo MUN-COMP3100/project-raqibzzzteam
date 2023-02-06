@@ -16,3 +16,5 @@ Project: St. John's Restaurant Finder
 |Search by Filters|Search for restaurants by cuisine or Yelp rating|Client|Yes|raqibzzz
 |Discussions|Discuss with locals about the best places to eat at|Server|Yes|vilakshankh
 |Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Maybe||
+|Discussions|Discuss with locals about the best places to eat at|Server|Yes|vilakshankh
+
