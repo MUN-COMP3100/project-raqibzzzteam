@@ -12,9 +12,9 @@ Project: St. John's Restaurant Finder
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
 |Login|User login|Server|Yes|raqibzzz
+|Discussions Page|Discuss with locals about the best places to eat at|Server/Client|Yes|vilakshankh
 |Search by Name|Search restaurant according to name|Client|Yes|vilakshankh
-|Search by Filters|Search for restaurants by cuisine or Yelp rating|Client|Yes|raqibzzz
-|Discussions|Discuss with locals about the best places to eat at|Server|Yes|vilakshankh
-|Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Maybe||
-|Discussions|Discuss with locals about the best places to eat at|Server|Yes|vilakshankh
-
+|Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Client|Yes|vilakshankh
+|Search by Cuisine|Search for restaurants by cuisine|Client|Yes|raqibzzz
+|Search by Rating|Search for restaurants Google rating|Client|Yes|raqibzzz
+|Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
