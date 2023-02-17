@@ -11,12 +11,12 @@ Project: St. John's Restaurant Finder
 
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
-|Login|User login|Server|Yes|raqibzzz
+|Login|User login|Server|Yes|raqibmuktadir
 |Discussions Page|Discuss with locals about the best places to eat at|Server/Client|Yes|vilakshankh
 |Search by Name|Search restaurant according to name|Client|Yes|vilakshankh
 |Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Client|Yes|vilakshankh
-|Search by Cuisine|Search for restaurants by cuisine|Client|Yes|raqibzzz
-|Search by Rating|Search for restaurants Google rating|Client|Yes|raqibzzz
+|Search by Cuisine|Search for restaurants by cuisine|Client|Yes|raqibmuktadir
+|Search by Rating|Search for restaurants Google rating|Client|Yes|raqibmuktadir
 |Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
-|Bookmark System|	Allow users to bookmark their favorite restaurants for quick and easy access|	Client|	Yes|	raqibzzz
-|Database Management|	Store and manage all the information about restaurants, including menu, location, reviews, and more|	Server|	Yes| raqibzzz|
+|Bookmark System|	Allow users to bookmark their favorite restaurants for quick and easy access|	Client|	Yes|	raqibmuktadir
+|Database Management|	Store and manage all the information about restaurants, including menu, location, reviews, and more|	Server|	Yes| raqibmuktadir|
