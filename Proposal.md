@@ -1,7 +1,7 @@
 ### Team
 
 Team name: raqibzzzTeam
-Team member 1: Abdullah Raqib Muktadir, MUNID: armuktadir, GITHUB: raqibzzz  
+Team member 1: Abdullah Raqib Muktadir, MUNID: armuktadir, GITHUB: raqibmuktadir  
 Team member 2: Vilakshan Khanna, MUNID: vkhanna, GITHUB: vilakshankh
 
 Project: St. John's Restaurant Finder
