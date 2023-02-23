@@ -20,5 +20,6 @@ Project: St. John's Restaurant Finder
 |Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
 |Bookmark System|	Allow users to bookmark their favorite restaurants for quick and easy access|	Client|	Yes|	raqibmuktadir
 |Database Management|	Store and manage all the information about restaurants, including menu, location, reviews, and more|	Server|	Yes| vilakshankh
-|Restaurant Wishlist|	A list of all the places the user wishes to try |	Client|	Yes| vilakshankh
+|Restaurant Wishlist|	A list of all the places the user wishes to try |	Client|	Yes| raqibmuktadir
+|Map|	A page that has a map with all the restaurants in our database|	Server|	Yes| vilakshankh
 |Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant and it will show on the restaurant page|	Client|	Yes| raqibmuktadir|
