@@ -12,13 +12,20 @@ Project: St. John's Restaurant Finder
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
 |Login|User login|Server|Yes|raqibmuktadir
-|Discussions Page|Discuss with locals about the best places to eat at|Server/Client|Yes|vilakshankh
-|Search by Name|Search restaurant according to name|Client|Yes|vilakshankh
-|Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Client|Yes|vilakshankh
-|Search by Cuisine|Search for restaurants by cuisine|Client|Yes|raqibmuktadir
-|Search by Rating|Search for restaurants Google rating|Client|Yes|raqibmuktadir
+|Search by Name|Search restaurant according to name|Server|Yes|vilakshankh
+|Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Server|Yes|vilakshankh
+|Search by Cuisine|Search for restaurants by cuisine|Server|Yes|raqibmuktadir
+|Search by Rating|Search for restaurants Google rating|Server|Yes|raqibmuktadir
+|Database Management|Store and manage all the information about restaurants, including menu, location, reviews, and more|Server|Yes|vilakshankh
+|Map|A page that has a map with all the restaurants in our database|Server|No/Maybe|vilakshankh|
+|Email Integration|Add the ability for users to receive email notifications or send emails from your application using NodeMailer|Server|No/Maybe|raqibmuktadir|
+
+
+
+|Name|Description|End|Deliver|Who|
+|-----|-----|-----|-----|-----|
+|Discussions Page|Discuss with locals about the best places to eat at|Client|Yes|vilakshankh
 |Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
-|Wishlist System|	Allow users to bookmark their favorite restaurants for quick and easy access|	Client|	Yes|	raqibmuktadir
-|Database Management|	Store and manage all the information about restaurants, including menu, location, reviews, and more|	Server|	Yes| vilakshankh
-|Map|A page that has a map with all the restaurants in our database|	Server|	Maybe| vilakshankh
-|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant and it will show on the restaurant page|	Client|	Yes| raqibmuktadir|
+|Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|raqibmuktadir
+|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|raqibmuktadir|
+
