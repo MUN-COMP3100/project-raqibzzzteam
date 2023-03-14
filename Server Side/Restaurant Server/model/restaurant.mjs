@@ -62,6 +62,18 @@ class Restaurant
         }
     }
 
+    static async update(name, new_restaurant){
+        let collection = await get_restaurant_collection();
+        let new_vals = {$set: {'name': new_restaurant.name, 'cuisine': new_restaurant.cuisine, 'location': new_restaurant.location}};
+        let obj = await collection.updateOne({'name': name}, new_vals)
+        if (obj.modifiedCount > 0){
+            return 'Restaurant correctly updated';
+        }else{
+            return 'Restaurant was not updated';
+        }
+
+    }
+
 
 
 }
