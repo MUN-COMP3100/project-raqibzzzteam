@@ -1,4 +1,4 @@
-import fs from  'fs' ;
+import fs from 'fs' ;
 import client from '../utils/db.mjs';
 import { Users } from '../model/users.mjs';
 
@@ -19,11 +19,10 @@ export async function add(req, res)
     let new_user = new Users(username, firstname, lastname, email, dob, password);
     let msg = await new_user.save();
     res.send(msg);
-
 }
 
 /**
- * A function that lists all users with all information that is
+ * A function that lists all restaurants with all information that is
  * in the file. 
  * @param {Request} req - A request Object
  * @param {Response} res - A response Object
@@ -34,13 +33,11 @@ export async function list_all(req, res)
     let objs = await Users.getAll();
     console.log(objs.length+' item(s) sent.');
     res.send(objs);
-
 }
 
-
 /**
- * A function that gets a user by name and returns all
- * data of the requested contact. 
+ * A function that gets a restaurant by name and returns all
+ * data of the requested user. 
  * @param {Request} req - A request Object
  * @param {Response} res - A response Object
  */
@@ -55,7 +52,6 @@ export async function get_user(req, res)
     }else{
         res.send('No item was found');
     }
-    
 }
 
 /**
@@ -64,7 +60,7 @@ export async function get_user(req, res)
  * @param {Response} res - A response Object
  */
 
-export async function delete_user(req, res)
+export async function delete_user(req, res) 
 {
     let username_to_match = req.params.username;
     let obj = await Users.get(username_to_match);
@@ -74,11 +70,10 @@ export async function delete_user(req, res)
     }else{
         res.send('No item was found');
     }
-    
 }
 
 /**
- * A function to update the information about a given user.
+ * A function to update the information about a given restaurant.
  * @param {Request} req - A request Object
  * @param {Response} res - A response Object
  */
@@ -92,6 +87,7 @@ export async function update_user(req, res)
     let dob = req.body.dob;
     let password = req.body.password;
     let new_user = new Users(username, firstname, lastname, email, dob, password);
-    let msg = await new_user.update(username, new_user);
+    let msg = await new_user.update(username_to_match);
     res.send(msg);
 }
+
