@@ -19,3 +19,11 @@ export async function add(req, res)
     res.send(msg);                
 }
 
+export async function update_restarant(req, res) {
+    let name = req.body.name;
+    let cuisine = req.body.cuisine;
+    let location = req.body.location;
+    let new_restaurant = new Restaurant(name, cuisine, location);
+    let msg = await new_restaurant.update();
+    res.send(msg);                
+}
