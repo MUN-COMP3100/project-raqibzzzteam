@@ -5,7 +5,7 @@ const port = 3000;
 app.use(json());// support json encoded bodies
 app.use(urlencoded({extended: true}));//incoming objects are strings or arrays
 
-import {list_all, get_restaurant, add, update_restaurant, delete_restaurant} from './controller/restaurants.js';// Here we import our code with the restaurant operations
+import {list_all, get_restaurant, add, update_restaurant, delete_restaurant} from './controller/restaurant.js';// Here we import our code with the restaurant operations
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
 
 var server;
@@ -18,11 +18,11 @@ async function createServer(){
     await connectToDB();
     // contacts resource paths
 
-    app.get('/restaurants', list_all);
-    app.get('/restaurants/:name', get_restaurant);
-    app.post('/restaurants', add);
-    app.put('/restaurants/:name', update_restaurant);
-    app.delete('/restaurants/:name', delete_restaurant);
+    app.get('/restaurant', list_all);
+    app.get('/restaurant/:name', get_restaurant);
+    app.post('/restaurant', add);
+    app.put('/restaurant/:name', update_restaurant);
+    app.delete('/restaurant/:name', delete_restaurant);
     // start the server
     server = app.listen(port, () => {
       console.log('Example app listening at http://localhost:%d', port);

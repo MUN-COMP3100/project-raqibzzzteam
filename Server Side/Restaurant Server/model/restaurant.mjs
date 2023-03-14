@@ -3,7 +3,7 @@ import { getDb } from '../utils/db.mjs';
 async function get_restaurant_collection ()
 {
     let db = await getDb();
-    return await db.collection('restaurants');
+    return await db.collection('stjohns');
 };
 
 
@@ -50,16 +50,10 @@ class Restaurant
 
     static async getAll()
     {
-        try
-        {
-            let collection = await get_restaurant_collection();
-            let restaurants = await collection.find({}).toArray();
-            return restaurants;
-        } 
-        catch(err)
-        {
-            throw err;
-        }
+
+        let collection = await get_restaurant_collection();
+        let restaurants = await collection.find({}).toArray();
+        return restaurants;
     }
 
     static async update(name, new_restaurant){

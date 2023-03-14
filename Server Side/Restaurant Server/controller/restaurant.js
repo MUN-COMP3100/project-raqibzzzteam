@@ -76,7 +76,7 @@ export async function delete_restaurant(req, res)
  * @param {Request} req - A request Object
  * @param {Response} res - A response Object
  */
-export async function update_restarant(req, res) {
+export async function update_restaurant(req, res) {
     let name = req.body.name;
     let cuisine = req.body.cuisine;
     let location = req.body.location;
