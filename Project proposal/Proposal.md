@@ -36,3 +36,7 @@ Project: St. John's Restaurant Finder
 |Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|raqibmuktadir
 |Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|raqibmuktadir|
 
+### Client Side (No/Maybe)
+|Name|Description|End|Deliver|Who|
+|Age Restriction|Users below the age of majority will not have access to bars|Client|No/Maybe|vilakshankh
+
