@@ -81,6 +81,6 @@ export async function update_restaurant(req, res) {
     let cuisine = req.body.cuisine;
     let location = req.body.location;
     let new_restaurant = new Restaurant(name, cuisine, location);
-    let msg = await new_restaurant.update();
+    let msg = await new_restaurant.update(name, new_restaurant);
     res.send(msg);                
 }
