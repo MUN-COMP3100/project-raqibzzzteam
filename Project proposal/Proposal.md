@@ -38,5 +38,6 @@ Project: St. John's Restaurant Finder
 
 ### Client Side (No/Maybe)
 |Name|Description|End|Deliver|Who|
+|-----|-----|-----|-----|-----|
 |Age Restriction|Users below the age of majority will not have access to bars|Client|No/Maybe|vilakshankh
 
