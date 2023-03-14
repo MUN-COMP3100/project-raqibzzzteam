@@ -62,26 +62,18 @@ class Restaurant
         }
     }
 
-    /**
-     * This method will retrieve a restuarant with the name passed
-     * as a parameter
-     * @param {String} name - the name of the contact to be retrieved
-     * @returns {Contact} - An object Contact with all contact's data
-     */
-
-    static async get(name)
-    {
+    static async update(name, new_restaurant){
         let collection = await get_restaurant_collection();
-        let obj = await collection.find({name: name}).toArray();
-        return obj;
+        let new_vals = {$set: {'name': new_restaurant.name, 'cuisine': new_restaurant.cuisine, 'location': new_restaurant.location}};
+        let obj = await collection.updateOne({'name': name}, new_vals)
+        if (obj.modifiedCount > 0){
+            return 'Restaurant correctly updated';
+        }else{
+            return 'Restaurant was not updated';
+        }
+
     }
 
-    /**
-     * This method will detele the contact with the specified
-     * name.
-     * @param {String} name_to_delete - A name to be deleted
-     * @returns {String} A message if the contact was deleted or not
-     */
 
     static async delete(name_to_delete)
     {
