@@ -13,7 +13,7 @@ Project: St. John's Restaurant Finder
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
 |User Registration|allows new user accounts to be made on the web program|Server|Yes|raqibmuktadir
-|Login|User login|Server|Yes|raqibmuktadir
+|Login|User credential verification|Server|Yes|raqibmuktadir
 |Search by Name|Search restaurant according to name|Server|Yes|vilakshankh
 |Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Server|Yes|vilakshankh
 |Search by Cuisine|Search for restaurants by cuisine|Server|Yes|raqibmuktadir
