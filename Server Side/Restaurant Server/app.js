@@ -23,6 +23,11 @@ async function createServer(){
     app.post('/restaurant', add);
     app.put('/restaurant/:name', update_restaurant);
     app.delete('/restaurant/:name', delete_restaurant);
+    app.get('/users', list_all);
+    app.get('/users/:username', get_restaurant);
+    app.post('/users', add);
+    app.put('/users/:username', update_restaurant);
+    app.delete('/users/:username', delete_restaurant);
     // start the server
     server = app.listen(port, () => {
       console.log('Example app listening at http://localhost:%d', port);
