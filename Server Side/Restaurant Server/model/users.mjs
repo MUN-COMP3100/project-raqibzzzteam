@@ -48,7 +48,7 @@ class Users
      */
     static async findByUsernameAndPassword(username, password) {
         let collection = await get_restaurant_collection();
-        let user = await collection.findOne({ username: username, password: password });
+        let user = await collection.findOne({ "Username": username, "Password": password });
         return user;
     }
 
@@ -65,10 +65,19 @@ class Users
         return users;
     }
 
+    static async get(username)
+    {
+        let collection = await get_restaurant_collection();
+        let usernames = await collection.find({"Name": username}).toArray();
+        return usernames;
+    }
+
     static async update(username, new_user){
         let collection = await get_restaurant_collection();
-        let new_vals = {$set:  {'username': new_user.username, 'firstname': new_user.firstname, 'lastname': new_user.lastname, 'email': new_user.email, 'dob': new_user.dob, 'password': new_user.password}};
-        let obj = await collection.updateOne({'username': username}, new_vals)
+        let new_vals = {$set:  {'Username': new_user.username, 'Firstname': new_user.firstname, 
+                                'Lastname': new_user.lastname, 'Email': new_user.email, 'DOB': new_user.dob, 
+                                'Password': new_user.password}};
+        let obj = await collection.updateOne({'Username': username}, new_vals)
         if (obj.modifiedCount > 0){
             return 'User updated successfully';
         }else{
@@ -78,7 +87,7 @@ class Users
     
     static async delete(username_to_delete){
         let collection = await get_restaurant_collection();
-        let obj = await collection.deleteOne({username: username_to_delete});
+        let obj = await collection.deleteOne({"Username": username_to_delete});
         if (obj.deletedCount > 0){
             return 'User deleted successfully';
         }else{

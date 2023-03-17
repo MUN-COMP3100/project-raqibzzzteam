@@ -59,14 +59,14 @@ class Restaurant
     static async get(name_to_match)
     {
         let collection = await get_restaurant_collection();
-        let restaurants = await collection.find({name: name_to_match}).toArray();
+        let restaurants = await collection.find({"Name": name_to_match}).toArray();
         return restaurants;
     }
 
     static async update(name, new_restaurant){
         let collection = await get_restaurant_collection();
-        let new_vals = {$set: {'name': new_restaurant.name, 'cuisine': new_restaurant.cuisine, 'location': new_restaurant.location}};
-        let obj = await collection.updateOne({'name': name}, new_vals)
+        let new_vals = {$set: {'Name': new_restaurant.name, 'Cuisine': new_restaurant.cuisine, 'Location': new_restaurant.location}};
+        let obj = await collection.updateOne({'Name': name}, new_vals)
         if (obj.modifiedCount > 0){
             return 'Restaurant correctly updated';
         }else{
@@ -79,7 +79,7 @@ class Restaurant
     static async delete(name_to_delete)
     {
         let collection = await get_restaurant_collection();
-        let obj = await collection.deleteOne({name: name_to_delete});
+        let obj = await collection.deleteOne({"Name": name_to_delete});
         if (obj.deletedCount > 0)
         {
             return 'Restaurant deleted';
