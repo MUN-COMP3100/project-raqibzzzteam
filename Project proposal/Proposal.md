@@ -14,10 +14,10 @@ Project: St. John's Restaurant Finder
 |-----|-----|-----|-----|-----|
 |User Registration|allows new user accounts to be made on the web program|Server|Yes|raqibmuktadir
 |Login|User credential verification|Server|Yes|raqibmuktadir
-|Search by Name|Search restaurant according to name|Server|Yes|vilakshankh
+|Search by Name|Search restaurant according to name|Server|Yes|raqibmuktadir
 |Search by Mood|Search for restaurants by your mood (each restaurant tagged)|Server|Yes|vilakshankh
 |Search by Cuisine|Search for restaurants by cuisine|Server|Yes|raqibmuktadir
-|Search by Rating|Search for restaurants Google rating|Server|Yes|raqibmuktadir
+|Search by Rating|Search for restaurants Google rating|Server|Yes|vilakshankh
 |Database Management|Store and manage all the information about restaurants, including menu, location, reviews, and more|Server|Yes|vilakshankh
 |File Uploading|Allows uploading pictures with reviews of restaurants or even adding pictures to a restaurant's gallery|Server|Yes|vilakshankh
 
