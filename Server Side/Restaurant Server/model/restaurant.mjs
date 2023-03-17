@@ -8,7 +8,7 @@ async function get_restaurant_collection ()
 
 
 /**
- * The class contact, with a main constructor and two methods
+ * The class Restaurant, with a main constructor and two methods
  * to add more fields retrieved with the third-party APIs
  */
 
@@ -24,7 +24,7 @@ class Restaurant
 
         /**
      * This method saves the current object restaurant in the Database
-     * @returns {String} - A message if contact was saved in the db or not
+     * @returns {String} - A message if user was saved in the db or not
      */
 
     async save()

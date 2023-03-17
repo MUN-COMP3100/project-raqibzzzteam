@@ -8,7 +8,7 @@ import { Users } from '../model/users.mjs';
  * @param {Response} res - A response Object
  */
 
-export async function add(req, res)
+export async function add_users(req, res)
 {
     let username = req.body.username;
     let firstname = req.body.firstname;
@@ -28,7 +28,7 @@ export async function add(req, res)
  * @param {Response} res - A response Object
  */
 
-export async function list_all(req, res)
+export async function list_all_users(req, res)
 {
     let objs = await Users.getAll();
     console.log(objs.length+' item(s) sent.');
