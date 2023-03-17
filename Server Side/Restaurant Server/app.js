@@ -8,6 +8,7 @@ app.use(urlencoded({extended: true}));//incoming objects are strings or arrays
 import { list_all_users, get_user, add_users, update_user, delete_user} from './controller/users.js';
 import {list_all, get_restaurant, add, update_restaurant, delete_restaurant} from './controller/restaurant.js';// Here we import our code with the restaurant operations
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
+import { Users } from './model/users.mjs'; // import the Users model
 
 var server;
 
@@ -29,6 +30,23 @@ async function createServer(){
     app.post('/users', add_users);
     app.put('/users/:username', update_user);
     app.delete('/users/:username', delete_user);
+
+    // define the route handler for the '/login' endpoint
+    app.post('/login', async (req, res) => {
+      let username = req.body.username;
+      let password = req.body.password;
+    
+      let user = await Users.findByUsernameAndPassword(username, password);
+    
+      if (user) {
+        // User found, log them in
+        res.send('User logged in successfully');
+      } else {
+        // User not found or incorrect password
+        res.send('Incorrect username or password');
+      }
+    });
+
     // start the server
     server = app.listen(port, () => {
       console.log('Example app listening at http://localhost:%d', port);

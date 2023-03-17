@@ -43,6 +43,16 @@ class Users
     }
 
     /**
+     * This static method for the class users will compare
+     * the username and password the user inputs with the username and password inside the database
+     */
+    static async findByUsernameAndPassword(username, password) {
+        let collection = await get_restaurant_collection();
+        let user = await collection.findOne({ username: username, password: password });
+        return user;
+    }
+
+    /**
      * This static method for the class users will retrieve
      * all the contacts inside the database
      * @returns {Array[Contact]} - An array with all contacts retrieved
