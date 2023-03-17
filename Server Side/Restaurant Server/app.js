@@ -25,6 +25,7 @@ async function createServer(){
     app.post('/restaurant', add);
     app.put('/restaurant/:name', update_restaurant);
     app.delete('/restaurant/:name', delete_restaurant);
+    
     app.get('/users', list_all_users);
     app.get('/users/:username', get_user);
     app.post('/users', add_users);

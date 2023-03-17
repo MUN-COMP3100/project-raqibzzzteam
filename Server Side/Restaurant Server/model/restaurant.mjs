@@ -56,6 +56,13 @@ class Restaurant
         return restaurants;
     }
 
+    static async get(name_to_match)
+    {
+        let collection = await get_restaurant_collection();
+        let restaurants = await collection.find({name: name_to_match}).toArray();
+        return restaurants;
+    }
+
     static async update(name, new_restaurant){
         let collection = await get_restaurant_collection();
         let new_vals = {$set: {'name': new_restaurant.name, 'cuisine': new_restaurant.cuisine, 'location': new_restaurant.location}};
