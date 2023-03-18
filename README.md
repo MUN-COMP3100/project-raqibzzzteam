@@ -41,3 +41,36 @@ Project: PlateSpot
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
 |Age Restriction|Users below the age of majority will not have access to bars|Client|No/Maybe|vilakshankh
+
+<br/>
+<br/> 
+
+
+# Instantiating the server
+<br/>
+
+## Recreating Database on Local Machine
+1. open mongodb compass
+2. connect to local host mongodb://localhost:27017
+3. create a database titled "restaurant"
+4. create collection titled "stjohns"
+5. import csv file titled "restaurant.csv" into collection "restaurant"
+6. create collection titled "users"
+7. import csv file titled "users.csv" into collection "users"
+
+<br/>
+
+## Implementation Description
+note: ensure port:3000 is available
+
+1. download repo github.com/MUN-COMP3100/project-raqibzzzteam
+2. locate to Server Side/Restaurant Server/ 
+3. open terminal here
+4. command node app.js
+5. server should start
+Connected successfully to mongoDB
+Example app listening at http://localhost:3000  
+
+6. To shut down the server, ctrl+c in terminal
+
+
