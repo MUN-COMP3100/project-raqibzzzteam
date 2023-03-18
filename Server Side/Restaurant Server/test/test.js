@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { add, list_all, get_restaurant, get_restaurant_cuisine, get_mood, get_rating, delete_restaurant, update_restaurant } from '../restaurant.js';
+import { add, list_all, get_restaurant, get_cuisine, get_mood, get_rating, delete_restaurant, update_restaurant } from '../restaurant.js';
 import { Restaurant } from '../model/restaurant.mjs';
 import { add_users, list_all_users, get_user, delete_user, update_user } from './users.js';
 import { Users } from require('./users.js');
@@ -52,7 +52,7 @@ describe('Restaurant functions', function() {
         });
     });
 
-    describe('get_restaurant_cuisine()', function() {
+    describe('get_cuisine()', function() {
         it('should get a restaurant by cuisine', async function() {
             const req = {
                 params: {
