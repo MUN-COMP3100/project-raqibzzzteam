@@ -42,11 +42,13 @@ Project: PlateSpot
 |-----|-----|-----|-----|-----|
 |Age Restriction|Users below the age of majority will not have access to bars|Client|No/Maybe|vilakshankh
 
-
+<br/>
+<br/> 
 
 
 # Instantiating the server
-
+<br/>
+<br/> 
 
 ## Recreating Database on Local Machine
 1. open mongodb compass
