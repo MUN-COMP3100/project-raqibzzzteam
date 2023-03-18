@@ -68,7 +68,7 @@ class Users
     static async get(username)
     {
         let collection = await get_restaurant_collection();
-        let usernames = await collection.find({"Name": username}).toArray();
+        let usernames = await collection.find({"Username": username}).toArray();
         return usernames;
     }
 

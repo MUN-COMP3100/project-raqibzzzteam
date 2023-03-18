@@ -53,6 +53,17 @@ export async function get_restaurant(req, res)
     
 }
 
+export async function get_restaurant_cuisine(req, res) {
+    let cuisine_to_match = req.params.cuisine; // use req.params.cuisine instead of req.params.name
+    let obj = await Restaurant.get_cuisine(cuisine_to_match);
+    if (obj.length > 0){
+        console.log(obj.length+' item(s) sent.');
+        res.send(obj[0]);        
+    } else {
+        res.send('No item was found');
+    }
+  }
+
 /**
  * A function that deletes the information about a given restaurant.
  * @param {Request} req - A request Object
@@ -81,6 +92,6 @@ export async function update_restaurant(req, res) {
     let cuisine = req.body.cuisine;
     let location = req.body.location;
     let new_restaurant = new Restaurant(name, cuisine, location);
-    let msg = await new_restaurant.update(name, new_restaurant);
+    let msg = await new_restaurant.update();
     res.send(msg);                
 }
