@@ -45,11 +45,10 @@ Project: PlateSpot
 
 
 
+# Instantiating the server
 
-#Instantiating the server
 
-
-##Recreating Database on Local Machine
+## Recreating Database on Local Machine
 1. open mongodb compass
 2. connect to local host mongodb://localhost:27017
 3. create a database titled "restaurant"
@@ -59,7 +58,7 @@ Project: PlateSpot
 7. import csv file titled "users.csv" into collection "users"
 
 
-##Implementation Description
+## Implementation Description
 note: ensure port:3000 is available
 
 1. download repo github.com/MUN-COMP3100/project-raqibzzzteam
