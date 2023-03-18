@@ -55,7 +55,7 @@ export async function get_restaurant(req, res)
     
 }
 
-export async function get_restaurant_cuisine(req, res) {
+export async function get_cuisine(req, res) {
     let cuisine_to_match = req.params.cuisine; // use req.params.cuisine instead of req.params.name
     let obj = await Restaurant.get_cuisine(cuisine_to_match);
     if (obj.length > 0){

@@ -11,7 +11,7 @@ import {list_all,
         add, 
         update_restaurant, 
         delete_restaurant,
-
+        get_cuisine,
         get_mood,
         get_rating} from './controller/restaurant.js';// Here we import our code with the restaurant operations
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
@@ -29,7 +29,7 @@ async function createServer(){
 
     app.get('/restaurant', list_all);
     app.get('/restaurant/:name', get_restaurant);
-    app.get('/restaurant/cuisine/:cuisine', get_restaurant_cuisine);
+    app.get('/restaurant/cuisine/:cuisine', get_cuisine);
     app.post('/restaurant', add);
     app.put('/restaurant/:name', update_restaurant);
     app.delete('/restaurant/:name', delete_restaurant);
