@@ -11,7 +11,7 @@ import {list_all,
         add, 
         update_restaurant, 
         delete_restaurant,
-        
+
         get_mood,
         get_rating} from './controller/restaurant.js';// Here we import our code with the restaurant operations
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
