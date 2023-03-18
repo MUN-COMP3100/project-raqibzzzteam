@@ -48,7 +48,6 @@ Project: PlateSpot
 
 # Instantiating the server
 <br/>
-<br/> 
 
 ## Recreating Database on Local Machine
 1. open mongodb compass
@@ -59,6 +58,7 @@ Project: PlateSpot
 6. create collection titled "users"
 7. import csv file titled "users.csv" into collection "users"
 
+<br/>
 
 ## Implementation Description
 note: ensure port:3000 is available
