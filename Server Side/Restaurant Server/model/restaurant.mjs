@@ -15,11 +15,13 @@ async function get_restaurant_collection ()
 class Restaurant 
 {
 
-    constructor(name, cuisine, location)
+    constructor(name, cuisine, location, mood, rating)
     {
         this.name = name;
         this.cuisine = cuisine;
         this.location = location;
+        this.mood = mood;
+        this.rating = rating;
     }
 
         /**
@@ -56,16 +58,35 @@ class Restaurant
         return restaurants;
     }
 
-    static async get(name_to_match)
+    static async get_name(name_to_match)
     {
         let collection = await get_restaurant_collection();
         let restaurants = await collection.find({"Name": name_to_match}).toArray();
         return restaurants;
     }
 
+    static async get_mood(mood_to_match)
+    {
+        let collection = await get_restaurant_collection();
+        let restaurants = await collection.find({"Mood": mood_to_match}).toArray();
+        return restaurants;
+    }
+
+    static async get_rating(rating_to_match)
+    {
+        let collection = await get_restaurant_collection();
+        let restaurants = await collection.find({"Rating": rating_to_match}).toArray();
+        return restaurants;
+    }
+
+
     static async update(name, new_restaurant){
         let collection = await get_restaurant_collection();
-        let new_vals = {$set: {'Name': new_restaurant.name, 'Cuisine': new_restaurant.cuisine, 'Location': new_restaurant.location}};
+        let new_vals = {$set: {'Name': new_restaurant.name, 
+                                'Cuisine': new_restaurant.cuisine, 
+                                'Location': new_restaurant.location,
+                                'Mood': new_restaurant.mood,
+                                'Rating': new_restaurant.ratings}};
         let obj = await collection.updateOne({'Name': name}, new_vals)
         if (obj.modifiedCount > 0){
             return 'Restaurant correctly updated';
