@@ -6,7 +6,14 @@ app.use(json());// support json encoded bodies
 app.use(urlencoded({extended: true}));//incoming objects are strings or arrays
 
 import { list_all_users, get_user, add_users, update_user, delete_user} from './controller/users.js';
-import {list_all, get_restaurant, add, update_restaurant, delete_restaurant, get_restaurant_cuisine} from './controller/restaurant.js';// Here we import our code with the restaurant operations
+import {list_all, 
+        get_restaurant, 
+        add, 
+        update_restaurant, 
+        delete_restaurant,
+        
+        get_mood,
+        get_rating} from './controller/restaurant.js';// Here we import our code with the restaurant operations
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
 import { Users } from './model/users.mjs'; // import the Users model
 
@@ -26,6 +33,12 @@ async function createServer(){
     app.post('/restaurant', add);
     app.put('/restaurant/:name', update_restaurant);
     app.delete('/restaurant/:name', delete_restaurant);
+
+    app.get('/restaurant/mood/:mood', get_mood);
+    app.get('/restaurant/rating/:rating', get_rating);
+
+
+
     
     app.get('/users', list_all_users);
     app.get('/users/:username', get_user);
