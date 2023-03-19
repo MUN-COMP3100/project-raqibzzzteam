@@ -85,7 +85,7 @@ Example app listening at http://localhost:3000
 
 
 
-|Name|Description|Dependencies|Completion Status|Description of tests|
+|Name|Description|Implementation Strategy|Dependencies|Completion Status|Description of tests|
 |-----|-----|-----|-----|-----|
 |Search by mood|This feature allows users to search for a restaurant based on their current mood, and the web app will suggest a restaurant based on its tags and users' previous reviews|The implementation strategy for this feature is to use a dropdown menu on the homepage where users can select their current mood. On the backend, the Express framework will handle the HTTP GET request from the client and search the database for the restaurant that has the most matching tags to the selected mood. The mongodb package will be used to interact with the database|This feature depends on the restaurant database module which stores all restaurant data|The implementation of this feature is complete|
 
