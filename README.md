@@ -45,11 +45,11 @@ Project: PlateSpot
 <br/>
 <br/> 
 
-
-# Instantiating the server
+# Server Side
+## Instantiating the server
 <br/>
 
-## Recreating Database on Local Machine
+### Recreating Database on Local Machine
 1. open mongodb compass
 2. connect to local host mongodb://localhost:27017
 3. create a database titled "restaurant"
@@ -60,7 +60,7 @@ Project: PlateSpot
 
 <br/>
 
-## Implementation Description
+### Implementation Description
 note: ensure port:3000 is available
 
 1. download repo github.com/MUN-COMP3100/project-raqibzzzteam
@@ -72,5 +72,21 @@ Connected successfully to mongoDB
 Example app listening at http://localhost:3000  
 
 6. To shut down the server, ctrl+c in terminal
+<br/>
+ 
+## Feature Descriptions
+1. name of the feature
+2. A one or two sentence description of the feature. You may refer to (and possibly update) a section of the proposal for this component.
+3. A brief description of the implementation strategy for the feature, including tools and imported packages and modules used
+4. A statement of which other features or project modules (storage, etc) this feature uses or depends on.
+5. A brief indication of the state of the implementation for the feature. Is it complete, how much is working?
+6. A description of how to test the feature. Test code should be provided to test both working and failure modes of the feature from the client-side. Also indicate whether the test code is working properly and what the marker should see upon running the test code. You are encouraged to use a test framework (Mocha) for this part.
+
+
+
+
+|Name|Description|Dependencies|Completion Status|Description of tests|
+|-----|-----|-----|-----|-----|
+|Search by mood|This feature allows users to search for a restaurant based on their current mood, and the web app will suggest a restaurant based on its tags and users' previous reviews|The implementation strategy for this feature is to use a dropdown menu on the homepage where users can select their current mood. On the backend, the Express framework will handle the HTTP GET request from the client and search the database for the restaurant that has the most matching tags to the selected mood. The mongodb package will be used to interact with the database|This feature depends on the restaurant database module which stores all restaurant data|The implementation of this feature is complete|
 
 
