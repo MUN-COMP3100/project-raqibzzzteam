@@ -17,6 +17,11 @@ import {list_all,
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
 import { Users } from './model/users.mjs'; // import the Users model
 
+import { dirname } from 'path'
+import { fileURLToPath } from 'url';
+const __dirname = dirname (fileURLToPath (import. meta.url)) ;
+app.use (express.static(__dirname + '/view'));
+
 var server;
 
 async function createServer(){
