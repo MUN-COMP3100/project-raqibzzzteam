@@ -1,6 +1,6 @@
 import express, { json, urlencoded } from 'express';
 const app = express();
-const port = 3000;
+const port = 3001;
 
 app.use(json());// support json encoded bodies
 app.use(urlencoded({extended: true}));//incoming objects are strings or arrays
