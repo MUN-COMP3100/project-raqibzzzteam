@@ -35,7 +35,9 @@ Project: PlateSpot
 |Discussions Page|Discuss with locals about the best places to eat at|Client|Yes|vilakshankh
 |Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
 |Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|raqibmuktadir
-|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|raqibmuktadir|
+|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|raqibmuktadir
+|Search results|Shows the list of restaurants based on the tag (mood, cuisine, rating, name)|Client|Yes|raqibmuktadir|
+|User Feed| Shows their reviews and bookmarked restaurants|Client|Yes|vilakshankh|
 
 ### Client Side (No/Maybe)
 |Name|Description|End|Deliver|Who|
