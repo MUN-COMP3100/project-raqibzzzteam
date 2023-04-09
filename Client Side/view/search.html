@@ -8,23 +8,30 @@
 			padding: 0;
 			font-family: Arial, sans-serif;
 		}
-		nav {
+
+		.navbar {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 50px;
 			background-color: #E1EEDD;
+			padding: 1em;
 		}
-		nav button {
-			background-color: transparent;
-			color: #183A1D;
-			font-size: 16px;
-			padding: 10px 20px;
+
+		.navbar a {
+			padding: 0.5em;
+			margin: 0 50px; /* change the margin value to add space between the links */
+			border-radius: 10px;
+			
+			color: #183A1D; /* change the text color to #183A1D */
+			font-size: 1em;
+			font-weight: bold;
+			text-decoration: none;
 			cursor: pointer;
+			outline: none;
 			border: none;
-			margin: 0 10px;
 		}
-		nav button:hover {
+
+		.navbar a:hover {
 			background-color: #FEFBE9;
 			color: #183A1D;
 		}
@@ -95,10 +102,10 @@
 	</style>
 </head>
 <body>
-	<nav>
-		<button>Home</button>
-		<button>Search</button>
-		<button>Maps</button>
+	<nav class="navbar">
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="maps.html">Maps</a>
 	</nav>
 	<section>
 		<h1>Search</h1>

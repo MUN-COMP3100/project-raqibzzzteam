@@ -55,44 +55,76 @@
         background-color: #012f0d;
     }
 
+    /* Second section */
     .second-section {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 90vh;
         background-color: #FEFBE9;
+        flex-direction: row;
     }
 
+    .second-section .left-column {
+        flex: 1;
+        color: #FEFBE9;
+        text-align: justify;
+        margin-right: 2em;
+    }
+
+    .second-section .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        margin-left: 2em;
+    }
+
+
+    .second-section .restaurant-list {
+        list-style: none; /* remove the bullet points from the list */
+        padding: 0; /* remove the default padding from the list */
+        margin: 0; /* remove the default margin from the list */
+        text-align: left; /* align the text to the left */
+    }
+
+    .second-section .restaurant-list li {
+        margin-bottom: 1em; /* add some space between the list items */
+    }
+
+    .second-section .restaurant-list li a {
+        text-decoration: none; /* remove the underline from the links */
+        color: #333; /* set the link color */
+    }
+
+    .second-section .restaurant-list li a:hover {
+        color: #666; /* change the link color on hover */
+    }
+
+    @font-face {
+    font-family: "Sunflower";
+        src: url(Font/FontsFree-Net-MADESunflowerPERSONALUSE.ttf) format("truetype");
+    }   
+
+    @font-face {
+    font-family: "Corbel";
+        src: url(Font/CORBEL.TTF) format("truetype");
+    }   
+
     .custom-heading {
-        font-family: MADE Sunflower, sans-serif;
+        font-family: 'Sunflower', sans-serif;
         font-size: 5em;
         color: #d6a607;
         text-align: center;
     }
 
     .custom-body {
-        font-family: MADE Sunflower, sans-serif;
+        font-family: 'Corbel', sans-serif;
         font-size: 25px;
         color: #FEFBE9;
         text-align: center;
     }
-    
-    .first-section a.button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 2em;
-        text-align: center;
-        padding: 1em 2em;
-        border-radius: 10px;
-        background-color: #E1EEDD;
-        color: #183A1D;
-        font-size: 1.2em;
-        font-weight: bold;
-        text-decoration: none;
-        box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-        margin-top: 1em;
-        width: 200px; /* change the value as needed */
-    }
+
 
 
 </style>
@@ -100,9 +132,9 @@
 <body>
     <!-- Navigation bar -->
 	<nav class="navbar">
-		<a href="#">Home</a>
-		<a href="#">Search</a>
-		<a href="#">Maps</a>
+		<a href="home.html">Home</a>
+		<a href="search.html">Search</a>
+		<a href="maps.html">Maps</a>
 	</nav>
 
      <!-- First section -->
@@ -116,9 +148,19 @@
 
     <!-- Second section -->
     <section class="second-section"
-        <div>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172568.2027007807!2d-52.96972272577065!3d47.48254589928638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1681052697556!5m2!1sen!2sca" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <div class="left-column">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172568.2027007807!2d-52.96972272577065!3d47.48254589928638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1681052697556!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         </div>
+        <div class="right-column">
+            <ul class="restaurant-list">
+                <li><a href="#">Restaurant 1</a></li>
+                <li><a href="#">Restaurant 2</a></li>
+                <li><a href="#">Restaurant 3</a></li>
+                <li><a href="#">Restaurant 4</a></li>
+                <li><a href="#">Restaurant 5</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 
 <script src="restaurant.js"></script>
