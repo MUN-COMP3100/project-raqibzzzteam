@@ -7,22 +7,102 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDceLtEfKUK0zEcVhjEMypkwHZAQFT9pRE"></script>
 
 
-    <title>Document</title>
+    <title>Plate Spot</title>
+    <link href="https://fonts.googleapis.com/css?family=MADE+Sunflower&display=swap" rel="stylesheet">
 </head>
 
-<h1>The Plate Spot</h1>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E1EEDD;
+        padding: 1em;
+    }
+
+    .navbar a {
+        padding: 0.5em;
+        margin: 0 50px; /* change the margin value to add space between the links */
+        border-radius: 10px;
+        
+        color: #183A1D; /* change the text color to #183A1D */
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    .navbar a:hover {
+        background-color: #FEFBE9;
+        color: #183A1D;
+    }
+
+    
+    /* First section */
+    .first-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120vh;
+        background-color: #FEFBE9;
+    }
+    
+    .first-section a.button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
+        text-align: center;
+        padding: 1em 2em;
+        border-radius: 10px;
+        background-color: #E1EEDD;
+        color: #183A1D;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+        margin-top: 1em;
+        width: 200px; /* change the value as needed */
+    }
+    
+    .first-section a.button:hover {
+        background-color: #183A1D;
+        color: #E1EEDD;
+    }
+</style>
 
 <body>
-    <div class="col-12">
+    <!-- Navigation bar -->
+	<nav class="navbar">
+		<a href="#">Home</a>
+		<a href="#">Explore</a>
+		<a href="#">Maps</a>
+	</nav>
+
+     <!-- First section -->
+     <section class="first-section">
+        <div>
+            <img src="Logo/Group 1.svg" alt="Plate Spot"/>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172568.2027007807!2d-52.96972272577065!3d47.48254589928638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1681052697556!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="second-section"
+    <div class="search">
         <h2>Search for a restaurant</h2>
             <form action="/search" method="POST">
                 <input type="text" name="plate" placeholder="Enter a restaurant">
                 <button type="submit">Search</button>
             </form>
     </div>
-
-    <div id="map"></div>
-
 
     <div id="resultDiv">
         <h2>Result</h2>
@@ -38,9 +118,6 @@
             </tr>
         </table>
     </div>
-
-    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172567.44187344576!2d-52.97006586304157!3d47.482777513508836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1680975237472!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-       
 </body>
 
 <script src="restaurant.js"></script>
