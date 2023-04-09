@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDceLtEfKUK0zEcVhjEMypkwHZAQFT9pRE"></script>
+
+
+    <title>Plate Spot</title>
+    <link href="https://fonts.googleapis.com/css?family=MADE+Sunflower&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E1EEDD;
+        padding: 1em;
+    }
+
+    .navbar a {
+        padding: 0.5em;
+        margin: 0 50px; /* change the margin value to add space between the links */
+        border-radius: 10px;
+        
+        color: #183A1D; /* change the text color to #183A1D */
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    .navbar a:hover {
+        background-color: #FEFBE9;
+        color: #183A1D;
+    }
+
+    
+    /* First section */
+    .first-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: #FEFBE9;
+    }
+    
+    .first-section a.button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
+        text-align: center;
+        padding: 1em 2em;
+        border-radius: 10px;
+        background-color: #E1EEDD;
+        color: #183A1D;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+        margin-top: 1em;
+        width: 200px; /* change the value as needed */
+    }
+</style>
+
+<body>
+    <!-- Navigation bar -->
+	<nav class="navbar">
+		<a href="#">Home</a>
+		<a href="#">Search</a>
+		<a href="#">Maps</a>
+	</nav>
+
+     <!-- First section -->
+     <section class="first-section">
+        <div>
+            <img src="Logo/Group 1.svg" alt="Plate Spot" width="200" height="100" style="display: block; margin: auto;"/>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172568.2027007807!2d-52.96972272577065!3d47.48254589928638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1681052697556!5m2!1sen!2sca" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="second-section"
+    <div class="search">
+        <h2>Search for a restaurant</h2>
+            <form action="/search" method="POST">
+                <input type="text" name="plate" placeholder="Enter a restaurant">
+                <button type="submit">Search</button>
+            </form>
+    </div>
+
+    <div id="resultDiv">
+        <h2>Result</h2>
+        <table id="resultTable">
+            <tr>
+                <tr>
+                    <th>Name</th>
+                    <th>Cuisine</th>
+                    <th>Location</th>
+                    <th>Mood</th>
+                    <th>Rating</th>
+                </tr>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script src="restaurant.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDceLtEfKUK0zEcVhjEMypkwHZAQFT9pRE&callback=initMap"
+        async defer></script>
