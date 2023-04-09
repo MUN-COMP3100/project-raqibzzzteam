@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			background-color: #E1EEDD;
+		}
+		nav button {
+			background-color: transparent;
+			color: #183A1D;
+			font-size: 16px;
+			padding: 10px 20px;
+			cursor: pointer;
+			border: none;
+			margin: 0 10px;
+		}
+		nav button:hover {
+			background-color: #FEFBE9;
+			color: #183A1D;
+		}
+		section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 80vh;
+			background-color: #183A1D;
+			color: #E1EEDD;
+			font-family: 'MADE Sunflower', sans-serif;
+		}
+		section h1 {
+			font-size: 64px;
+			margin: 0;
+			text-align: center;
+		}
+		section h3 {
+			font-size: 24px;
+			margin: 20px 0 10px 0;
+			text-align: center;
+		}
+		section h2 {
+			font-size: 32px;
+			margin: 10px 0;
+			text-align: center;
+		}
+		.search-container {
+			display: flex;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.search-bar {
+			background-color: #E1EEDD;
+			border-radius: 25px;
+			padding: 10px;
+			width: 400px;
+			height: 40px;
+			font-size: 16px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+			text-align: center;
+			margin-right: 10px;
+		}
+		.search-dropdown {
+			position: relative;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.search-dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #E1EEDD;
+			min-width: 160px;
+			z-index: 1;
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
+		.search-dropdown:hover .search-dropdown-content {
+			display: block;
+		}
+		.search-dropdown-option {
+			padding: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<button>Home</button>
+		<button>Search</button>
+		<button>Maps</button>
+	</nav>
+	<section>
+		<h1>Search</h1>
+		<h3>How do you want to explore your food?</h3>
+		<h2>mood, cuisine, rating</h2>
+		<div class="search-container">
+			<div class="search-dropdown">
+				<span>Select an option</span>
+				<div class="search-dropdown-content">
+					<div class="search-dropdown-option">mood</div>
+					<div class="search-dropdown-option">cuisine</div>
+					<div class="search-dropdown-option">rating</div>
+				</div>
+			</div>
+			<input type="text" class="search-bar" placeholder="Search for food...">
+			<button class="search-button">Search</button>
+		</div>
+	</section>
+</head>
+<body>
