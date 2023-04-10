@@ -1,3 +1,17 @@
+const baseurl="http://localhost:3001";
+
+function find(){
+  let date=document.getElementById("findInput").value;
+  console.log(Name);
+  fetch(`${baseurl}/restaurant`)
+  .then(response=>response.json())
+  .then((data)=>
+  {
+      loadList(data);
+      console.log(data);
+});
+}
+
 function loadTable(data) {
     // contentView.style.display = "block";
     let table = document.getElementById("resultTable");
@@ -17,6 +31,18 @@ function loadTable(data) {
         <td>${data.Mood}</td>
         <td>${data.Rating}</td>`;
         table.innerHTML += row;
+}
+
+function loadList(data){
+  let table = document.getElementById("resultTable");
+  table.innerHTML = "";
+  let header = `<tr>
+      <th>Name</th>
+      </tr>`;
+      table.innerHTML += header;
+      let row = `<tr>
+      <td>${data.Name}</td>`;
+      table.innerHTML += row;
 }
 
 function initMap() {
