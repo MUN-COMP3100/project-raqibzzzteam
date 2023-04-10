@@ -35,7 +35,7 @@
 			background-color: #FEFBE9;
 			color: #183A1D;
 		}
-		section {
+		.first-section {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -43,22 +43,34 @@
 			height: 80vh;
 			background-color: #183A1D;
 			color: #E1EEDD;
-			font-family: 'MADE Sunflower', sans-serif;
+			
 		}
-		section h1 {
-			font-size: 64px;
+		.first-section h1 {
+			font-size: 140px;
 			margin: 0;
 			text-align: center;
+			color: #F0A04B;
+			font-family: 'MADE Sunflower', sans-serif;
 		}
-		section h3 {
-			font-size: 24px;
+		.first-section h3 {
+			font-size: 20px;
 			margin: 20px 0 10px 0;
 			text-align: center;
 		}
-		section h2 {
-			font-size: 32px;
+		.first-section h2 {
+			font-size: 34px;
 			margin: 10px 0;
 			text-align: center;
+		}
+
+
+		.second-section {
+			display: flex;
+			justify-content: center;
+			
+			align-items: center;
+			height: 80vh;
+			background-color: #E1EEDD;
 		}
 		.search-container {
 			display: flex;
@@ -107,21 +119,25 @@
 		<a href="search.html">Search</a>
 		<a href="maps.html">Maps</a>
 	</nav>
-	<section>
+	<section class = "first-section">
 		<h1>Search</h1>
 		<h3>How do you want to explore your food?</h3>
 		<h2>mood, cuisine, rating</h2>
+		
+	</section>
+
+	<section class = "second-section">
 		<div class="search-container">
-			<div class="search-dropdown">
-				<span>Select an option</span>
-				<div class="search-dropdown-content">
-					<div class="search-dropdown-option">mood</div>
-					<div class="search-dropdown-option">cuisine</div>
-					<div class="search-dropdown-option">rating</div>
+				<div class="search-dropdown">
+					<span>Select an option</span>
+					<div class="search-dropdown-content">
+						<div class="search-dropdown-option">mood</div>
+						<div class="search-dropdown-option">cuisine</div>
+						<div class="search-dropdown-option">rating</div>
+					</div>
 				</div>
-			</div>
-			<input type="text" class="search-bar" placeholder="Search for food...">
-			<button class="search-button">Search</button>
+				<input type="text" class="search-bar" placeholder="Search for food...">
+				<button class="search-button">Search</button>
 		</div>
 	</section>
 </head>
