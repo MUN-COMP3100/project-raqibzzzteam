@@ -13,7 +13,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: #E1EEDD;
+			background-color: #fff6c6;
 			padding: 1em;
 		}
 
@@ -65,12 +65,11 @@
 
 
 		.second-section {
-			display: flex;
+			display: grid;
 			justify-content: center;
-			
-			align-items: center;
+			align-items: start;
 			height: 80vh;
-			background-color: #E1EEDD;
+			background-color: #fff6c6;
 		}
 		.search-container {
 			display: flex;
@@ -92,12 +91,14 @@
 		.search-dropdown {
 			position: relative;
 			display: inline-block;
-			margin-right: 10px;
+			margin-right: 20px;
 		}
 		.search-dropdown-content {
 			display: none;
 			position: absolute;
-			background-color: #E1EEDD;
+			top: 20px; 
+			background-color: #183A1D;
+			color:#F0A04B;
 			min-width: 160px;
 			z-index: 1;
 			padding: 10px;
@@ -110,6 +111,10 @@
 		.search-dropdown-option {
 			padding: 5px;
 			cursor: pointer;
+		}
+		.search-dropdown-option:hover {
+			background-color: #F0A04B;
+			color: #183A1D
 		}
 	</style>
 </head>
@@ -129,14 +134,14 @@
 	<section class = "second-section">
 		<div class="search-container">
 				<div class="search-dropdown">
-					<span>Select an option</span>
+					<span>Filter</span>
 					<div class="search-dropdown-content">
 						<div class="search-dropdown-option">mood</div>
 						<div class="search-dropdown-option">cuisine</div>
 						<div class="search-dropdown-option">rating</div>
 					</div>
 				</div>
-				<input type="text" class="search-bar" placeholder="Search for food...">
+				<input type="text" class="search-bar" placeholder="Search for restaurant...">
 				<button class="search-button">Search</button>
 		</div>
 	</section>
