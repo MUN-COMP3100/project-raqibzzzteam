@@ -1,8 +1,6 @@
 const baseurl="http://localhost:3001";
 
 function find(){
-  let date=document.getElementById("findInput").value;
-  console.log(Name);
   fetch(`${baseurl}/restaurant`)
   .then(response=>response.json())
   .then((data)=>
