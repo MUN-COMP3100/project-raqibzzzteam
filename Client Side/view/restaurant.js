@@ -1,20 +1,17 @@
 const baseurl="http://localhost:3001";
 
 function find(){
-  let date=document.getElementById("findInput").value;
-  console.log(Name);
   fetch(`${baseurl}/restaurant`)
   .then(response=>response.json())
   .then((data)=>
   {
       loadList(data);
       console.log(data);
-});
+  });
 }
 
 function loadTable(data) {
-    // contentView.style.display = "block";
-    let table = document.getElementById("resultTable");
+    let table = document.getElementById("restaurant-list");
     table.innerHTML = "";
     let header = `<tr>
         <th>Name</th>
@@ -24,25 +21,31 @@ function loadTable(data) {
         <th>Rating</th>
         </tr>`;
         table.innerHTML += header;
-        let row = `<tr>
-        <td>${data.Name}</td>
-        <td>${data.Cuisine}</td>
-        <td>${data.Location}</td>
-        <td>${data.Mood}</td>
-        <td>${data.Rating}</td>`;
-        table.innerHTML += row;
+        data.forEach((restaurant) => {
+            let row = `<tr>
+            <td>${restaurant.Name}</td>
+            <td>${restaurant.Cuisine}</td>
+            <td>${restaurant.Location}</td>
+            <td>${restaurant.Mood}</td>
+            <td>${restaurant.Rating}</td>
+            </tr>`;
+            table.innerHTML += row;
+        });
 }
 
 function loadList(data){
-  let table = document.getElementById("resultTable");
+  let table = document.getElementById("restaurant-list");
   table.innerHTML = "";
   let header = `<tr>
       <th>Name</th>
       </tr>`;
       table.innerHTML += header;
-      let row = `<tr>
-      <td>${data.Name}</td>`;
-      table.innerHTML += row;
+      data.forEach((restaurant) => {
+          let row = `<tr>
+          <td>${restaurant.Name}</td>
+          </tr>`;
+          table.innerHTML += row;
+      });
 }
 
 function initMap() {
@@ -50,5 +53,6 @@ function initMap() {
       center: {lat: 37.7749, lng: -122.4194},
       zoom: 10
     });
-  }
-  
+}
+
+find();
