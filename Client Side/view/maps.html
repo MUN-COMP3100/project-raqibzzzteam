@@ -21,7 +21,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #E1EEDD;
+        background-color: #FEFBE9;
         padding: 1em;
     }
 
@@ -77,6 +77,7 @@
         align-items: center;
         flex: 1;
         margin-left: 2em;
+        color: #183A1D;
     }
 
 
@@ -84,7 +85,7 @@
         list-style: none; /* remove the bullet points from the list */
         padding: 0; /* remove the default padding from the list */
         margin: 0; /* remove the default margin from the list */
-        text-align: left; /* align the text to the left */
+        text-align: center; /* align the text to the left */
     }
 
     .second-section .restaurant-list li {
@@ -124,6 +125,11 @@
         text-align: center;
     }
 
+    .my-div {
+        padding-left: 20px;
+    }
+
+
 
 
 </style>
@@ -147,11 +153,11 @@
 
     <!-- Second section -->
     <section class="second-section"
-        <div class="left-column">
+        <div class="left-column" style="padding-left: 40px;">
             <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172568.2027007807!2d-52.96972272577065!3d47.48254589928638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca38e6b0aa261%3A0x9e1fd4001f12261f!2sSt.%20John&#39;s%2C%20NL!5e0!3m2!1sen!2sca!4v1681052697556!5m2!1sen!2sca" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         </div>
         <div class="right-column">
-            <table id="restaurant-list">
+            <table id="restaurant-list" class="restaurant-list">
                 <tr>
                     <tr>
                         <th>Name</th>
