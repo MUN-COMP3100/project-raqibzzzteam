@@ -32,12 +32,12 @@ Project: PlateSpot
 ### Client Side (Yes)
 |Name|Description|End|Deliver|Who|
 |-----|-----|-----|-----|-----|
-|Explore Page|Explore the map of St. John's and find restaurants|Client|Yes|vilakshankh
-|Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|vilakshankh
-|Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|raqibmuktadir
-|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|raqibmuktadir
-|Search results|Shows the list of restaurants based on the tag (mood, cuisine, rating, name)|Client|Yes|raqibmuktadir|
-|User Feed| Shows their reviews and bookmarked restaurants|Client|Yes|vilakshankh|
+|Explore Page|Explore the map of St. John's and find restaurants|Client|Yes|raqibmuktadir
+|Google Maps|Integrate Google Map to show restaurant location on a restaurant's page|Client|Yes|raqibmuktadir
+|Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|vilakshankh
+|Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|vilakshankh
+|Search results|Shows the list of restaurants based on the tag (mood, cuisine, rating, name)|Client|Yes|vilakshankh|
+|User Feed| Shows their reviews and bookmarked restaurants|Client|Yes|raqibmuktadir|
 
 ### Client Side (No/Maybe)
 |Name|Description|End|Deliver|Who|
