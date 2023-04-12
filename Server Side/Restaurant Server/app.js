@@ -2,6 +2,11 @@ import express, { json, urlencoded } from 'express';
 const app = express();
 const port = 3001;
 
+import cors from "cors";
+app.use(cors()); // allow cross-origin requests
+app.use(json()); // support json encoded bodies
+app.use(urlencoded({ extended: true })); //incoming objects are strings or arrays
+
 app.use(json());// support json encoded bodies
 app.use(urlencoded({extended: true}));//incoming objects are strings or arrays
 
