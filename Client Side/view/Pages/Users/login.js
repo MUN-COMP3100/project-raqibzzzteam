@@ -1,4 +1,4 @@
-const baseurl="http://localhost:3001";
+/*const baseurl="http://localhost:3001";
 
 function find(){
     fetch(`${baseurl}/users`)
@@ -28,4 +28,15 @@ function login(){
 }
 
 const loginbtn=document.getElementById("loginbtn");
-loginbtn.addEventListener("click",login);
+loginbtn.addEventListener("click",login);*/
+
+function validate(){
+    var username = document.getElementById("username").value
+    var password = document.getElementById("password").value
+    if ( username == "admin" && password == "user"){
+        alert("Login Successful")
+    }
+    else{
+        alert("Login Failed")
+    }
+}

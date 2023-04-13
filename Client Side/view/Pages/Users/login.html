@@ -82,14 +82,22 @@
 	<form action="">
 		<div class="container">
 			<h2>Login</h2>
-			<label for="username"><b>Username</b></label>
-			<input id="username" type="text" placeholder="Enter Username" name="username" required>
-
-			<label for="password"><b>Password</b></label>
-			<input id="passsword" type="password" placeholder="Enter Password" name="password" required>
-
-			<button id="loginbtn" type="submit">Login</button>
+			<form id="login-form" method="POST">
+				<div>
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required>
+				</div>
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required>
+				</div>
+				<div>
+					<button type="submit" id="loginbtn" onclick="validate()">Login</button>
+				</div>
+			</form>
+			<div id="login-status"></div>
 		</div>
 	</form>
 </body>
+<script src="/Client Side/view/Pages/Users/login.js"></script>
 </html>
