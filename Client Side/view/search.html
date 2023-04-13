@@ -136,14 +136,34 @@
 			<div class="search-dropdown">
 				<span>Filter</span>
 				<div class="search-dropdown-content">
-					<div class="search-dropdown-option">mood</div>
-					<div class="search-dropdown-option">cuisine</div>
-					<div class="search-dropdown-option">rating</div>
+					<button class="search-dropdown-option">mood</button>
+					<button class="search-dropdown-option">cuisine</button>
+					<button class="search-dropdown-option">rating</button>
 				</div>
 			</div>
-			<input type="text" class="search-bar" placeholder="Search for restaurant...">
-			<button class="search-button">Search</button>
+			<input type="text" id="search-bar" class="search-bar" placeholder="Search for restaurant...">
+			<button id="searchbtn" class="search-button">Search</button>
 		</div>
 	</section>
+	<section class="third-section">
+		<div id="resultDiv">
+			<h2>Search Results</h2>
+			<table id="resultTable">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Cuisine</th>
+						<th>Location</th>
+						<th>Mood</th>
+						<th>Rating</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</section>
+
+	<script src="search.js"></script>
+</body>
 </head>
 <body>
