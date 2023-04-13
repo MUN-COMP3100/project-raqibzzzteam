@@ -12,8 +12,56 @@ function find_name(){
 });
 }
 
-const searchbtn=document.getElementById("searchbtn");
-searchbtn.addEventListener("click",find_name);
+const searchnamebtn=document.getElementById("searchnamebtn");
+searchnamebtn.addEventListener("click",find_name);
+
+function find_mood(){
+    let mood=document.getElementById("search-bar").value;
+    console.log(mood);
+    fetch(`${baseurl}/restaurant/${mood}`)
+    .then(response=>response.json())
+    .then((data)=>
+    {
+        console.log(data);
+        loadTable(data);
+});
+}
+
+const searchmoodbtn=document.getElementById("searchmoodbtn");
+searchmoodbtn.addEventListener("click",find_mood);
+
+
+function find_cuisine(){
+    let cuisine=document.getElementById("search-bar").value;
+    console.log(cuisine);
+    fetch(`${baseurl}/restaurant/${cuisine}`)
+    .then(response=>response.json())
+    .then((data)=>
+    {
+        console.log(data);
+        loadTable(data);
+});
+}
+
+const searchcuisinebtn=document.getElementById("searchcuisinebtn");
+searchcuisinebtn.addEventListener("click",find_cuisine);
+
+function find_rating(){
+    let rating=document.getElementById("search-bar").value;
+    console.log(rating);
+    fetch(`${baseurl}/restaurant/${rating}`)
+    .then(response=>response.json())
+    .then((data)=>
+    {
+        console.log(data);
+        loadTable(data);
+});
+}
+
+const searchratingbtn=document.getElementById("searchratingbtn");
+searchratingbtn.addEventListener("click",find_rating);
+
+
 
 function loadTable(data) {
     let table = document.getElementById("resultTable");
