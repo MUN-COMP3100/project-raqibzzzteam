@@ -114,11 +114,29 @@
 	</section>
 
 	<section class = "second-section">
-			<input type="text" class="search-bar" placeholder="Search for restaurant by cuisine...">
+			<input type="text" id="search-bar" class="search-bar" placeholder="Search for restaurant by cuisine...">
 			<button id="searchcuisinebtn" class="search-button">Search</button>
 		</div>
 	</section>
 
-	<script src="search.js"></script>
+	<section class="third-section">
+		<div id="resultDiv">
+			<h2>Search Results</h2>
+			<table id="resultTable">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Cuisine</th>
+						<th>Location</th>
+						<th>Mood</th>
+						<th>Rating</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+	</section>
+
+	<script src="cuisine_search.js"></script>
 </head>
 <body>
