@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #f1f1f1;
+		}
+
+		.container {
+			background-color: #ffffff;
+			border: 3px solid #f1f1f1;
+			padding: 20px;
+			width: 50%;
+			margin: auto;
+			margin-top: 50px;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		button {
+			display: block;
+            margin: 0 auto;
+            margin-top: 2em;
+            text-align: center;
+			padding: 1em 2em;
+			border-radius: 10px;
+			background-color: #183A1D;
+			color: #E1EEDD;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-decoration: none;
+			box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+			margin-top: 1em;
+            width: 200px;
+		}
+
+		button:hover {
+			opacity: 0.8;
+		}
+
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+		}
+
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		.container a {
+			color: dodgerblue;
+		}
+
+		.signin {
+			background-color: #f1f1f1;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<div class="container">
+			<h2>Login</h2>
+			<label for="username"><b>Username</b></label>
+			<input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input id="passsword" type="password" placeholder="Enter Password" name="password" required>
+
+			<button id="loginbtn" type="submit">Login</button>
+		</div>
+	</form>
+</body>
+</html>

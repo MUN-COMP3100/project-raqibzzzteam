@@ -37,7 +37,7 @@ Project: PlateSpot
 |Wishlist System|Allow users to bookmark their favorite restaurants for quick and easy access|Client|Yes|vilakshankh
 |Review Restaurant|	users will be able to leave their own review of their experiences in the restaurant which will show on the restaurant page|Client|Yes|vilakshankh
 |Search results|Shows the list of restaurants based on the tag (mood, cuisine, rating, name)|Client|Yes|vilakshankh|
-|User Feed| Shows their reviews and bookmarked restaurants|Client|Yes|raqibmuktadir|
+|User Feed| Shows their user information and liked restaurants|Client|Yes|raqibmuktadir|
 
 ### Client Side (No/Maybe)
 |Name|Description|End|Deliver|Who|
