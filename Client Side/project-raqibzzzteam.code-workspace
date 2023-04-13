@@ -1,11 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "../../../cs3100asgn3-Vilakshankh/view"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "view"
+        }
+    ]
 }
