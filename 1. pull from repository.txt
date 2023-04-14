@@ -1,0 +1,2 @@
+1. pull from repository
+2. download mongodb compass and postman
