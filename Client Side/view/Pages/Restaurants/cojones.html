@@ -9,6 +9,54 @@
 			padding: 0;
 			font-family: Arial, sans-serif;
 		}
+    h1 {
+
+			font-size: 100px;
+			margin-bottom: 40px;
+			text-align: left;
+			color: #F0A04B;
+			font-family: 'MADE Sunflower', sans-serif;
+		}
+     h2 {
+			font-size: 34px;
+			margin: 10px 0;
+			text-align: left;
+		}
+		 h3 {
+			font-size: 20px;
+			margin: 20px 0 10px 0;
+			text-align: left;
+		}
+
+    .left-column {
+        flex: 1;
+        justify-content: start;
+        align-items: start;
+        margin-left: 50px;
+        padding-right: 30px;
+    }
+
+    .right-column {
+      flex: 1;
+        justify-content: start;
+        align-items: start;
+        margin-right: 50px;
+    }
+
+    .paragraph
+    {
+      font-size: 20px;
+      margin: 20px 0 10px 0;
+      text-align: left;
+    }
+
+    .custom-heading {
+      font-size: 100px;
+      margin-bottom: 40px;
+      text-align: left;
+      color: #F0A04B;
+      font-family: 'MADE Sunflower', sans-serif;
+    }
 
 		.navbar {
 			display: flex;
@@ -39,92 +87,66 @@
 		.first-section {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: space-evenly;
 			align-items: center;
 			height: 100vh;
 			background-color: #183A1D;
 			color: #E1EEDD;
 			
 		}
-		.first-section h1 {
-
-			font-size: 100px;
-			margin-bottom: 40px;
-			text-align: center;
-			color: #F0A04B;
-			font-family: 'MADE Sunflower', sans-serif;
-		}
-		.first-section h3 {
-			font-size: 20px;
-			margin: 20px 0 10px 0;
-			text-align: center;
-		}
-		.first-section h2 {
-			font-size: 34px;
-			margin: 10px 0;
-			text-align: center;
-		}
+		
 
     .first-section {
         display: flex;
         flex-direction: row;
     }
 
-    .left-column {
-        flex: 1;
-        justify-content: start;
-        align-items: start;
-    }
-
-    .right-column {
-        flex: 1;
-    }
-
-
-    .custom-heading {
-      font-size: 100px;
-      margin-bottom: 40px;
-      text-align: left;
-      color: #F0A04B;
-      font-family: 'MADE Sunflower', sans-serif;
-    }
-
     .second-section {
+      padding-top: 60px;
       display: grid;
       grid-template-columns: 1fr 1fr; /* change grid to two columns */
       justify-content: center;
-      align-items: center;
+      align-items: start;
       height: 80vh;
       background-color: #fff6c6;
       gap: 20px; /* add gap between columns */
+      
     }
-
 
     .second-section {
         display: flex;
         flex-direction: row;
-        
     }
 
     .third-section {
-      display: grid;
-      grid-template: 1fr 1fr;
-      justify-content: center;
+      flex: 1;
+      justify-content: start;
+      align-items: start;
+      padding-left: 50px;
       
-      align-items: auto;
       height: 80vh;
       background-color: #183A1D;
-      gap: 20px;
-    }
-
-    .third-section {
-        display: flex;
-        flex-direction: row;
+      
     }
 
     
+    .third-section h1
+    {
+      font-size: 45px;
+      color: #F0A04B;
+    }
+    .third-section h2
+    {
+      color: #fff6c6;
+    }
+    .third-section h3
+    {
+      color: #fff6c6;
+    }
 
+  
     .grid-container {
+      
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
@@ -162,24 +184,34 @@
           <a href="/Client Side/view/Pages/Maps/maps.html">Maps</a>
       </nav>
       <section class="first-section">
+
+
+      
+
+
           <div class="left-column">
             <h1 class="custom-heading">Cojones</h1>
             <div id="resultDiv">
-              <h2>Information</h2>
-              <table id="resultTable">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Cuisine</th>
-                    <th>Location</th>
-                    <th>Mood</th>
-                    <th>Rating</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
+              <h2></h2>
+                <table id="resultTable">
+                  <thead>
+                    <tr>
+                      
+                      <th>Cuisine</th>
+                      <th>Location</th>
+                      <th>Mood</th>
+                      <th>Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
             </div>
           </div>
+
+
+
+
+
           <div class="right-column">
               <div class="grid-container" style="padding-right: 100px;">
                   <div class="grid-item">
@@ -203,15 +235,46 @@
                 </div>
           </div>
       </section> 
+
+
+
+
+      
+
       <section class="second-section">
           <div class="left-column">
-            <h3>alkjfkals;fjaslkdfjaklsfjslkadjflksdajfl;ksadjf;lksadjflkdsajflskdajflksdajflkdsjfa;slkf</h3>
+            <div class = "paragraph">
+              <h2>Reviews</h2>
+              <div id="resultDiv">
+                <h2></h2>
+                  <table id="resultTable">
+                    <thead>
+                      <tr>
+                        
+                        <th>Review</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+              </div>
+              
+            </div>
           </div>
           <div class="right-column">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.192572458033!2d-52.70940792324119!3d47.56404149091487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3d59f1cac35%3A0xa4b5ebd116ab689e!2sCojones%20Tacos%20%26%20Tequila!5e0!3m2!1sen!2sca!4v1681432551309!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
       </section>  
+
+
+
+
+
+
       <section class = "third-section">
+        <h2>Sample Menu</h2>
+        <h3>asdfasdfsdafsdafsdafasdf</h3>  
+
         
       </section>   
 
