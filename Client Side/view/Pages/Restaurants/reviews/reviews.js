@@ -12,6 +12,17 @@ function find(){
     });
   }
 
+  function display(){
+    let name=document.getElementById("restaurant_name").innerText;
+    fetch(`${baseurl}/restaurant/${name}`)
+    .then(response=>response.json())
+    .then((data)=>
+    {
+        console.log(data);
+        loadTable(data);
+    });
+  }
+
   function loadList(data){
     let table = document.getElementById("result-list");
     table.innerHTML = "";
@@ -25,4 +36,24 @@ function find(){
         table.innerHTML += row;
   }
 
+  function loadTable(data) {
+    let table = document.getElementById("result");
+    table.innerHTML = "";
+    let header = `<tr>
+        <th>Cuisine</th>
+        <th>Location</th>
+        <th>Mood</th>
+        <th>Rating</th>
+        </tr>`;
+        table.innerHTML += header;
+        let row = `<tr>
+        <td>${restaurant.Cuisine}</td>
+        <td>${restaurant.Location}</td>
+        <td>${restaurant.Mood}</td>
+        <td>${restaurant.Rating}</td>
+        </tr>`;
+        table.innerHTML += row;
+}
+
   find();
+  display();
