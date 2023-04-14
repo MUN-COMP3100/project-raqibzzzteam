@@ -39,10 +39,10 @@ export async function list_all_reviews(req, res)
  * @param {Response} res - A response Object
  */
 
-export async function get_restaurant(req, res)
+export async function get_Restaurant(req, res)
 {
-    let name_to_match = req.params.name;
-    let obj = await Reviews.get_restaurant(name_to_match);
+    let restaurant_to_match = req.params.restaurant;
+    let obj = await Reviews.get_Restaurant(restaurant_to_match);
     if (obj.length > 0){
         console.log(obj.length+' item(s) sent.');
         res.send(obj[0]);        
@@ -53,8 +53,8 @@ export async function get_restaurant(req, res)
 }
 
 export async function get_review(req, res) {
-    let cuisine_to_match = req.params.cuisine; // use req.params.cuisine instead of req.params.name
-    let obj = await Reviews.get_review(cuisine_to_match);
+    let review_to_match = req.params.review; 
+    let obj = await Reviews.get_review(review_to_match);
     if (obj.length > 0){
         console.log(obj.length+' item(s) sent.');
         res.send(obj[0]);        
@@ -72,7 +72,7 @@ export async function get_review(req, res) {
 export async function delete_review(req, res)
 {
     let name_to_match = req.params.name;
-    let obj = await Reviews.get_restaurant(name_to_match);
+    let obj = await Reviews.get_Restaurant(name_to_match);
     if (obj.length > 0){
         let msg = await Reviews.delete_review(name_to_match);
         res.send(msg);        

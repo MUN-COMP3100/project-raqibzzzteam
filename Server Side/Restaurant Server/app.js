@@ -19,6 +19,7 @@ import {list_all,
         get_cuisine,
         get_mood,
         get_rating} from './controller/restaurant.js';// Here we import our code with the restaurant operations
+import { get_Restaurant, get_review, list_all_reviews } from './controller/reviews.js'
 import { connectToDB, closeDBConnection } from './utils/db.mjs';
 import { Users } from './model/users.mjs'; // import the Users model
 
@@ -53,8 +54,9 @@ async function createServer(){
     app.put('/users/:username', update_user);
     app.delete('/users/:username', delete_user);
 
-    app.get('/reviews', list_all_users);
-    app.get('/reviews/:username', get_user);
+    app.get('/reviews', list_all_reviews);
+    app.get('/reviews/restaurant/:restaurant', get_Restaurant);
+    app.get('/reviews/:review', get_review);
     //app.post('/reviews', add_users);
     //app.put('/reviews/:username', update_user);
     //app.delete('/reviews/:username', delete_user);
