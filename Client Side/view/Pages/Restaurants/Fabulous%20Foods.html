@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plate Spot</title>
+	<link href="https://fonts.googleapis.com/css?family=MADE+Sunflower&display=swap" rel="stylesheet">
+    <style>
+				body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+    h1 {
+
+			font-size: 100px;
+			margin-bottom: 40px;
+			text-align: left;
+			color: #F0A04B;
+			font-family: 'MADE Sunflower', sans-serif;
+		}
+     h2 {
+			font-size: 50px;
+			margin: 0;
+			text-align: left;
+      color: #183A1D;
+		}
+		 h3 {
+			font-size: 14px;
+			margin: 20px 0 10px 0;
+			text-align: left;
+		}
+
+    .left-column {
+        flex: 1;
+        justify-content: start;
+        align-items: start;
+        margin-left: 50px;
+        padding-right: 30px;
+    }
+
+    .right-column {
+      flex: 1;
+        justify-content: start;
+        align-items: start;
+        margin-right: 50px;
+    }
+
+    .paragraph
+    {
+      font-size: 20px;
+      margin: 20px 0 10px 0;
+      text-align: left;
+    }
+
+    .custom-heading {
+      font-size: 100px;
+      margin-bottom: 40px;
+      text-align: left;
+      color: #F0A04B;
+      font-family: 'MADE Sunflower', sans-serif;
+    }
+
+		.navbar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff6c6;
+			padding: 1em;
+		}
+
+		.navbar a {
+			padding: 0.5em;
+			margin: 0 50px; /* change the margin value to add space between the links */
+			border-radius: 10px;
+			
+			color: #183A1D; /* change the text color to #183A1D */
+			font-size: 1em;
+			font-weight: bold;
+			text-decoration: none;
+			cursor: pointer;
+			outline: none;
+			border: none;
+		}
+
+		.navbar a:hover {
+			background-color: #FEFBE9;
+			color: #183A1D;
+		}
+		.first-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 100vh;
+			background-color: #183A1D;
+			color: #E1EEDD;
+			
+		}
+		
+
+    .first-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .second-section {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* change grid to two columns */
+      justify-content: center;
+      align-items: start;
+      height: 80vh;
+      background-color: #fff6c6;
+      gap: 20px; /* add gap between columns */
+      
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .third-section {
+      flex: 1;
+      justify-content: start;
+      align-items: start;
+      padding-left: 50px;
+      padding-top: 50px;
+      height: 80vh;
+      background-color: #183A1D;
+      
+    }
+
+    
+    .third-section h1
+    {
+      font-size: 45px;
+      color: #F0A04B;
+    }
+    .third-section h2
+    {
+      color: #fff6c6;
+    }
+    .third-section h3
+    {
+      color: #fff6c6;
+    }
+
+  
+    .grid-container {
+      
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      justify-content: start; /* added property */
+    }
+
+    .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 0px solid black;
+        text-align: right; /* added property */
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+  </style>
+  </head>
+  <body>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+          <a href="/Client Side/view/Pages/home.html">Home</a>
+          
+          <a href="/Client Side/view/Pages/Searches/Cuisine Search/cuisine_search.html">Cuisine Search</a>
+          <a href="/Client Side/view/Pages/Searches/Mood Search/mood_search.html">Mood Search</a>
+          <a href="/Client Side/view/Pages/Searches/Rating Search/rating_search.html">Rating Search</a>
+          <a href="/Client Side/view/Pages/Maps/maps.html">Maps</a>
+      </nav>
+      <section class="first-section">
+
+
+      
+
+
+          <div class="left-column">
+            <h1 class="custom-heading" id="restaurant_name">Fabulous Foods</h1>
+            <div id="resultDiv">
+              <h2></h2>
+                <table id="resultTable">
+                  <thead>
+                    <tr>
+                      
+                      <th>Cuisine</th>
+                      <th>Location</th>
+                      <th>Mood</th>
+                      <th>Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="right-column">
+              <div class="grid-container" style="padding-right: 100px;">
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/36375973.png" alt="Image 1">
+                  </div>
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/72546327_398667917753201_4749695455225446400_n.jpg" alt="Image 2">
+                  </div>
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/Cojones.jpg" alt="Image 3">
+                  </div>
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/CojonesTacosTequila-StJohns-NL.webp" alt="Image 4">
+                  </div>
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/DSC_1599.JPG" alt="Image 5">
+                  </div>
+                  <div class="grid-item">
+                    <img src="/Client Side/Photos/huge.jpg" alt="Image 6">
+                  </div>
+                </div>
+          </div>
+      </section> 
+
+
+
+
+      
+
+      <section class="second-section">
+          <div class="left-column">
+            <div class = "paragraph">
+              <h2>Reviews</h2>
+              <div id="resultDiv">
+                <h2></h2>
+                  <table id="result-list">
+                    <tr>
+                      <tr>   
+                        <th>Review</th>
+                      </tr>
+                    </tr>
+                  </table>
+              </div>
+              
+            </div>
+          </div>
+          <div class="right-column">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.192572458033!2d-52.70940792324119!3d47.56404149091487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3d59f1cac35%3A0xa4b5ebd116ab689e!2sCojones%20Tacos%20%26%20Tequila!5e0!3m2!1sen!2sca!4v1681432551309!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </section>  
+
+
+
+
+
+
+      <section class = "third-section">
+        
+        <h2>Sample Menu</h2>
+        <h3>asdfasdfsdafsdafsdafasdf</h3>  
+
+        
+      </section>   
+      <script src="/Client Side/view/Pages/Restaurants/reviews/reviews.js"></script>
+  </body>
