@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plate Spot</title>
+	<link href="https://fonts.googleapis.com/css?family=MADE+Sunflower&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff6c6;
+            padding: 1em;
+        }
+
+        .navbar a {
+            padding: 0.5em;
+            margin: 0 50px; /* change the margin value to add space between the links */
+            border-radius: 10px;
+            
+            color: #183A1D; /* change the text color to #183A1D */
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+
+        .navbar a:hover {
+            background-color: #FEFBE9;
+            color: #183A1D;
+        }
+
+		
+		/* First section */
+		.first-section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80vh;
+			background-color: #fff6c6;
+		}
+		
+        
+		
+		.first-section a.button {
+			display: block;
+            margin: 0 auto;
+            margin-top: 2em;
+            text-align: center;
+			padding: 1em 2em;
+			border-radius: 10px;
+			background-color: #183A1D;
+			color: #E1EEDD;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-decoration: none;
+			box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+			margin-top: 1em;
+            width: 200px; 
+		}
+		
+		.first-section a.button:hover {
+            background-color: #F0A04B;
+		    color: #183A1D;
+		}
+		
+		/* Second section */
+		.second-section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: #F0A04B;
+			padding: 1em;
+            height: 300px;
+            
+		}
+		
+		.second-section .left-column {
+			flex: 1;
+			color: #FEFBE9;
+			text-align: justify;
+			margin-right: 2em;
+            
+		}
+		
+		.second-section .left-column p {
+			margin-bottom: 2em;
+		}
+		
+		.second-section .right-column {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
+		}
+		
+		.second-section .right-column .button {
+			display: inline-block;
+			padding: 1em 2em;
+			border-radius: 10px;
+			background-color: #E1EEDD;
+			color: #183A1D;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-decoration:none;
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .second-section .right-column .button:hover {
+            background-color: #183A1D;
+            color: #E1EEDD;
+	    }
+	
+	@media screen and (max-width: 768px) {
+		.second-section {
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.second-section .left-column {
+			margin-right: 0;
+		}
+	}
+</style>
+</head>
+<body>
+    <!-- Navigation bar -->
+	<nav class="navbar">
+		<a href="/Client Side/view/Pages/home.html">Home</a>
+		
+		<a href="/Client Side/view/Pages/Searches/Cuisine Search/cuisine_search.html">Cuisine Search</a>
+		<a href="/Client Side/view/Pages/Searches/Mood Search/mood_search.html">Mood Search</a>
+		<a href="/Client Side/view/Pages/Searches/Rating Search/rating_search.html">Rating Search</a>
+		<a href="/Client Side/view/Pages/Maps/maps.html">Maps</a>
+	</nav>
+    <!-- First section -->
+    <section class="first-section">
+        <div>
+            <img src="/Client Side/view/Logo/Group 1.svg" alt="Plate Spot" />
+            <a href="/Client Side/view/Pages/Users/login.html" class="button">Login</a>
+        </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="second-section">
+        <div class="left-column" style="padding-left: 100px;"">
+            <p>There's been one too many times where you did not know where to go 
+                get food here in St. John's which is why we propose a small web 
+                application where users are able to view all their eating options 
+                in the city of St. John's based on only a few filters. Mood, rating, 
+                and cuisine type. 
+                Every Restaurant has its own information's page where 
+                its location, menu, reviews and etc. will be displayed.</p>
+        </div>
+        <div class="right-column">
+            <a href="#" class="button">Explore</a>
+        </div>
+    </section>
+</body>
+</html>
+
