@@ -1,42 +1,48 @@
-/*const baseurl="http://localhost:3001";
+const baseurl = "http://localhost:3001";
 
-function find(){
-    fetch(`${baseurl}/users`)
-    .then(response=>response.json())
-    .then((data)=>
-    {
-        loadList(data);
+function login() {
+    event.preventDefault();
+  const username = document.getElementById("username").value;
+  fetch(`${baseurl}/users/${username}`)
+    .then((response) => response.json())
+    .then((data) => {
         console.log(data);
-    });
-  }
-
-function login(){
-    let username=document.getElementById("username").value;
-    let password=document.getElementById("password").value;
-    fetch(`${baseurl}/users`)
-    .then(response=>response.json())
-    .then((data)=>
-    {
-        let user = data.find((user) => user.username === username && user.password === password);
-        if (user) {
-            console.log("Login successful");
-            // Redirect to the homepage or the user's dashboard
+        console.log(data.Password);
+        let tempusername = data.Username;
+        let tempPass = data.Password;
+      if (username === tempusername) {
+        const password = document.getElementById("password").value;
+        if (password === tempPass) {
+          alert("Login successful");
+          // code to redirect to home page or dashboard
+          window.location.href = `/Client Side/view/Pages/${tempusername}.html`;
         } else {
-            console.log("Invalid username or password");
+          alert("Incorrect password");
         }
+      } else {
+        alert("Login failed");
+      }
     });
 }
 
-const loginbtn=document.getElementById("loginbtn");
-loginbtn.addEventListener("click",login);*/
+const loginBtn = document.getElementById("loginBtn");
+loginBtn.addEventListener("click", login);
 
-function validate(){
-    var username = document.getElementById("username").value
-    var password = document.getElementById("password").value
+/*function validate(){
+    let data = document.getElementById("username").value;
+    fetch(`${baseurl}/users/${data}`)
+    .then(response=>response.json())
+    .then((data)=>
+    {
+        //loadList(data);
+        console.log(data);
+        //let temp=data;
+    });
+    //var password = document.getElementById("password").value
     if ( username == "admin" && password == "user"){
         alert("Login Successful")
     }
     else{
         alert("Login Failed")
     }
-}
+}*/
