@@ -3,7 +3,7 @@ import { getDb } from '../utils/db.mjs';
 async function get_restaurant_collection ()
 {
     let db = await getDb();
-    return await db.collection('stjohns');
+    return await db.collection('reviews');
 };
 
 
@@ -55,17 +55,17 @@ class Reviews
         return reviews;
     }
 
-    static async get_restaurant(name_to_match)
+    static async get_Restaurant(restaurant_to_match)
     {
         let collection = await get_restaurant_collection();
-        let restaurants = await collection.find({"Restaurant": name_to_match}).toArray();
+        let restaurants = await collection.find({"Restaurant": restaurant_to_match}).toArray();
         return restaurants;
     }
 
-    static async get_review(cuisine_to_match)
+    static async get_review(review_to_match)
     {
         let collection = await get_restaurant_collection();
-        let reviews = await collection.find({"Review": cuisine_to_match}).toArray();
+        let reviews = await collection.find({"Review": review_to_match}).toArray();
         return reviews;
     }
 
