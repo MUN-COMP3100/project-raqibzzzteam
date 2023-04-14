@@ -46,15 +46,18 @@ async function createServer(){
 
     app.get('/restaurant/mood/:mood', get_mood);
     app.get('/restaurant/rating/:rating', get_rating);
-
-
-
     
     app.get('/users', list_all_users);
     app.get('/users/:username', get_user);
     app.post('/users', add_users);
     app.put('/users/:username', update_user);
     app.delete('/users/:username', delete_user);
+
+    app.get('/reviews', list_all_users);
+    app.get('/reviews/:username', get_user);
+    //app.post('/reviews', add_users);
+    //app.put('/reviews/:username', update_user);
+    //app.delete('/reviews/:username', delete_user);
 
     // define the route handler for the '/login' endpoint
     app.post('/login', async (req, res) => {
