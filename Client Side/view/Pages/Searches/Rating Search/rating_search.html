@@ -46,8 +46,9 @@
 			
 		}
 		.first-section h1 {
-			font-size: 140px;
-			margin: 0;
+
+			font-size: 100px;
+			margin-bottom: 40px;
 			text-align: center;
 			color: #F0A04B;
 			font-family: 'MADE Sunflower', sans-serif;
@@ -64,23 +65,25 @@
 		}
 
         .second-section {
-            display: flex;
+			
+            display: grid;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             height: 80vh;
             background-color: #fff6c6;
         }
 
         .search-container {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin-top: 20px;
-        }
+			display: flex;
+			justify-content: center;
+			
+			align-items: center;
+			margin-top: 20px;
+		}
 
-        .search-bar {
-            
+		.search-bar {
+			
+            margin-top: 20px;
             background-color: #E1EEDD;
             border-radius: 25px;
             padding: 10px;
@@ -91,9 +94,43 @@
             box-shadow: 0 0 5px rgba(0,0,0,0.3);
             text-align: center;
             margin-right: 10px;
-        }
+        
+		}
 
+		.search-button {
+			margin-left: 10px;
+			margin-top: 15px;
+			background-color: #F0A04B;
+			border-radius: 25px;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+		}
 
+		#resultTable {
+			
+			border-collapse: collapse;
+			width: 100%;
+			text-align: center;
+		}
+
+		#resultTable th {
+			background-color: #F0A04B;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10px;
+			border-bottom: 2px solid #ddd;
+		}
+
+		#resultTable td {
+			font-size: 16px;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		#resultTable tr:hover {
+			background-color: #f5f5f5;
+		}
 
 
 	</style>
@@ -115,12 +152,10 @@
 	</section>
 
 	<section class = "second-section">
+		<div class="search-container">
 			<input type="text" id="search-bar" class="search-bar" placeholder="Search for restaurant by rating...">
-			<button id="searchratingbtn" class="search-button">Search</button>
+			<button id="searchratingbtn" class="search-button">Go</button>
 		</div>
-	</section>
-
-	<section class="third-section">
 		<div id="resultDiv">
 			<h2>Search Results</h2>
 			<table id="resultTable">

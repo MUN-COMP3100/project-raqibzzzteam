@@ -30,11 +30,11 @@ function loadTable(data) {
         table.innerHTML += header;
         data.forEach((restaurant) => {
         let row = `<tr>
-        <td>${data.Name}</td>
-        <td>${data.Cuisine}</td>
-        <td>${data.Location}</td>
-        <td>${data.Mood}</td>
-        <td>${data.Rating}</td>
+        <td>${restaurant.Name}</td>
+        <td>${restaurant.Cuisine}</td>
+        <td>${restaurant.Location}</td>
+        <td>${restaurant.Mood}</td>
+        <td>${restaurant.Rating}</td>
         </tr>`;
         table.innerHTML += row;
     });
