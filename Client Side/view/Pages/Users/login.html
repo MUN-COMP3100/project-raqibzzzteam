@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body {
-			background-color: #f1f1f1;
+			background-color: #183A1D;
+			font-family: 'Courier New', Courier, monospace;
 		}
 
 		.container {
-			background-color: #ffffff;
-			border: 3px solid #f1f1f1;
+			background-color: #F0A04B;
+			border-radius: 20px;
 			padding: 20px;
 			width: 50%;
 			margin: auto;
@@ -20,6 +21,13 @@
 
 		h2 {
 			text-align: center;
+			font-size: 70px;
+			color: #183A1D;
+		}
+		h3 {
+			text-align: start;
+			font-size: 20px;
+			color: #183A1D;
 		}
 
 		input[type=text], input[type=password] {
@@ -81,14 +89,14 @@
 <body>
 	<form action="">
 		<div class="container">
-			<h2>Login</h2>
+			<h2>LOGIN</h2>
 			<form id="login-form" method="POST">
 				<div>
-					<label for="username">Username:</label>
+					<h3 for="username">Username:</h3>
 					<input type="text" id="username" name="username" required>
 				</div>
 				<div>
-					<label for="password">Password:</label>
+					<h3 for="password">Password:</h3>
 					<input type="password" id="password" name="password" required>
 				</div>
 				<div>
