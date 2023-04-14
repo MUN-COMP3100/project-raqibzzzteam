@@ -7,7 +7,7 @@
 				body {
 			margin: 0;
 			padding: 0;
-			font-family: Arial, sans-serif;
+			font-family: 'Courier New', Courier, monospace;
 		}
     h1 {
 
@@ -15,19 +15,24 @@
 			margin-bottom: 40px;
 			text-align: left;
 			color: #F0A04B;
-			font-family: 'MADE Sunflower', sans-serif;
+			font-family: 'Courier New', Courier, monospace;
 		}
      h2 {
 			font-size: 50px;
 			margin: 0;
 			text-align: center;
       color: #183A1D;
+      
 		}
 		 h3 {
 			font-size: 14px;
 			margin: 20px 0 10px 0;
 			text-align: left;
 		}
+
+    #user_table td {
+      padding-right: 20px;
+    }
 
     .left-column {
         flex: 1;
@@ -49,6 +54,7 @@
       font-size: 20px;
       margin: 20px 0 10px 0;
       text-align: left;
+      
     }
 
     .custom-heading {
@@ -56,7 +62,7 @@
       margin-bottom: 40px;
       text-align: left;
       color: #F0A04B;
-      font-family: 'MADE Sunflower', sans-serif;
+      font-family: 'Courier New', Courier, monospace;
     }
 
 		.navbar {
@@ -90,7 +96,7 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-			height: 100vh;
+			height: 60vh;
 			background-color: #183A1D;
 			color: #E1EEDD;
 			
@@ -108,13 +114,11 @@
       
       justify-content: center;
       align-items: start;
-      height: 80vh;
+      height: 40vh;
       background-color: #fff6c6;
       gap: 20px; /* add gap between columns */
       
     }
-
-    
 
     .third-section {
       flex: 1;
@@ -148,13 +152,13 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
-      justify-content: start; /* added property */
+      justify-content: start; 
     }
 
     .grid-item {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         height: 200px;
         border: 0px solid black;
         text-align: right; /* added property */
@@ -187,18 +191,21 @@
           <div class="left-column">
             <h1 class="custom-heading">John Doe</h1>
             <h2 class="custom-body" id="restaurant_name">johndoe</h2>
-            <div id="resultDiv">
-              <h2></h2>
-                <table id="user_table">
-                  <tr>
+            <div class="paragraph">
+              
+              <div id="resultDiv">
+                <h2></h2>
+                  <table id="user_table">
                     <tr>
-                      
-                      <th>Email</th>
-                      <th>Date Of Birth</th>
+                      <tr>
+                        
+                        <th>Email</th>
+                        <th>Date Of Birth</th>
 
+                      </tr>
                     </tr>
-                  </tr>
-                </table>
+                  </table>
+              </div>
             </div>
           </div>
 
@@ -241,13 +248,7 @@
 
 
 
-      <section class = "third-section">
-        
-        <h2>Sample Menu</h2>
-        <h3>asdfasdfsdafsdafsdafasdf</h3>  
-
-        
-      </section>   
+       
 
   </body>
   <script src="/Client Side/view/Pages/Users/Profiles/userdata.js"></script>
