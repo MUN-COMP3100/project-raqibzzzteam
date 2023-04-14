@@ -15,7 +15,7 @@ function login() {
         if (password === tempPass) {
           alert("Login successful");
           // code to redirect to home page or dashboard
-          window.location.href = `/Client Side/view/Pages/${tempusername}.html`;
+          window.location.href = `/Client Side/view/Pages/Users/Profiles/${tempusername}.html`;
         } else {
           alert("Incorrect password");
         }
