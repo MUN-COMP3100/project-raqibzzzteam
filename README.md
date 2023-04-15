@@ -71,6 +71,7 @@ note: ensure port:3001 is available
 
 #### To sign in use these credentials - 
 Username - johndoe , Password - Password123
+
 Username - sarahsmith , Password - MyP@ssword
 
 <br/>
