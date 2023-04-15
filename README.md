@@ -67,6 +67,8 @@ Project: PlateSpot
 2. Open index.html with the Live Server by right clicking it
 3. Once opened with live server, you should be able to access the whole web program
 
+Another way to access the client side once the server is connected and live is to go to http://127.0.0.1:5500 on your browser
+
 note: ensure port:3001 is available
 
 #### To sign in use these credentials - 
