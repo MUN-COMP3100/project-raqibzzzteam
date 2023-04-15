@@ -7,7 +7,7 @@
 				body {
 			margin: 0;
 			padding: 0;
-			font-family: Arial, sans-serif;
+			font-family: 'Courier New', Courier, monospace;
 		}
     h1 {
 
@@ -15,18 +15,47 @@
 			margin-bottom: 40px;
 			text-align: left;
 			color: #F0A04B;
-			font-family: 'MADE Sunflower', sans-serif;
+			font-family: 'Courier New', Courier, monospace;
 		}
      h2 {
 			font-size: 50px;
-			margin: 0;
+			margin-bottom: 0;
 			text-align: center;
       color: #183A1D;
+
 		}
 		 h3 {
 			font-size: 14px;
 			margin: 20px 0 10px 0;
 			text-align: left;
+		}
+
+    #user_table td {
+      padding-right: 20px;
+    }
+    #resultTable {
+			
+			border-collapse: collapse;
+			width: 100%;
+			text-align: left;
+		}
+
+		#resultTable th {
+			background-color: #F0A04B;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10px;
+			border-bottom: 2px solid #ddd;
+		}
+
+		#resultTable td {
+			font-size: 16px;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		#resultTable tr:hover {
+			background-color: #f5f5f5;
 		}
 
     .left-column {
@@ -49,6 +78,7 @@
       font-size: 20px;
       margin: 20px 0 10px 0;
       text-align: left;
+      
     }
 
     .custom-heading {
@@ -56,7 +86,7 @@
       margin-bottom: 40px;
       text-align: left;
       color: #F0A04B;
-      font-family: 'MADE Sunflower', sans-serif;
+      font-family: 'Courier New', Courier, monospace;
     }
 
 		.navbar {
@@ -90,7 +120,7 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 			align-items: center;
-			height: 100vh;
+			height: 60vh;
 			background-color: #183A1D;
 			color: #E1EEDD;
 			
@@ -108,13 +138,11 @@
       
       justify-content: center;
       align-items: start;
-      height: 80vh;
+      height: 50vh;
       background-color: #fff6c6;
       gap: 20px; /* add gap between columns */
       
     }
-
-    
 
     .third-section {
       flex: 1;
@@ -148,13 +176,13 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
-      justify-content: start; /* added property */
+      justify-content: start; 
     }
 
     .grid-item {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
         height: 200px;
         border: 0px solid black;
         text-align: right; /* added property */
@@ -175,7 +203,7 @@
       <!-- Navigation bar -->
       <nav class="navbar">
           <a href="/Client Side/view/Pages/home.html">Home</a>
-          
+          <a href = "/Client Side/view/Pages/Searches/Name Search/name_search.html">Name Search</a>
           <a href="/Client Side/view/Pages/Searches/Cuisine Search/cuisine_search.html">Cuisine Search</a>
           <a href="/Client Side/view/Pages/Searches/Mood Search/mood_search.html">Mood Search</a>
           <a href="/Client Side/view/Pages/Searches/Rating Search/rating_search.html">Rating Search</a>
@@ -187,18 +215,21 @@
           <div class="left-column">
             <h1 class="custom-heading">Sarah Smith</h1>
             <h2 class="custom-body" id="restaurant_name">sarahsmith</h2>
-            <div id="resultDiv">
-              <h2></h2>
-                <table id="user_table">
-                  <tr>
+            <div class="paragraph">
+              
+              <div id="resultDiv">
+                <h2></h2>
+                  <table id="user_table">
                     <tr>
-                      
-                      <th>Email</th>
-                      <th>Date Of Birth</th>
+                      <tr>
+                        
+                        <th>Email</th>
+                        <th>Date Of Birth</th>
 
+                      </tr>
                     </tr>
-                  </tr>
-                </table>
+                  </table>
+              </div>
             </div>
           </div>
 
@@ -241,13 +272,7 @@
 
 
 
-      <section class = "third-section">
-        
-        <h2>Sample Menu</h2>
-        <h3>asdfasdfsdafsdafsdafasdf</h3>  
-
-        
-      </section>   
+       
 
   </body>
   <script src="/Client Side/view/Pages/Users/Profiles/userdata.js"></script>
