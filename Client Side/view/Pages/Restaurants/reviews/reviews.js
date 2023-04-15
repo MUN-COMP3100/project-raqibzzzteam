@@ -47,10 +47,10 @@ function find(){
         </tr>`;
         table.innerHTML += header;
         let row = `<tr>
-        <td>${restaurant.Cuisine}</td>
-        <td>${restaurant.Location}</td>
-        <td>${restaurant.Mood}</td>
-        <td>${restaurant.Rating}</td>
+        <td>${data.Cuisine}</td>
+        <td>${data.Location}</td>
+        <td>${data.Mood}</td>
+        <td>${data.Rating}</td>
         </tr>`;
         table.innerHTML += row;
 }

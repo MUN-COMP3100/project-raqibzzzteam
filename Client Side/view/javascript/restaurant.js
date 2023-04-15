@@ -41,8 +41,10 @@ function loadList(data){
       </tr>`;
       table.innerHTML += header;
       data.forEach((restaurant) => {
+          let temp=restaurant.Name;
+          temp.trim();
           let row = `<tr>
-          <td><a href="/Client Side/view/Pages/Restaurants/${restaurant.Name}.html">${restaurant.Name}</a></td>
+          <td><a href="/Client Side/view/Pages/Restaurants/${temp}.html">${restaurant.Name}</a></td>
           </tr>`;
           table.innerHTML += row;
       });
