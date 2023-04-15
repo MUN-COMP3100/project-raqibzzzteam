@@ -85,7 +85,7 @@ Example app listening at http://localhost:3000
 6. A description of how to test the feature. Test code should be provided to test both working and failure modes of the feature from the client-side. Also indicate whether the test code is working properly and what the marker should see upon running the test code. You are encouraged to use a test framework (Mocha) for this part.
 
 
-
+###Server Side Features
 
 |Name|Description|Implementation Strategy|Dependencies|Completion Status|Description of tests|
 |-----|-----|-----|-----|-----|-----|
@@ -96,7 +96,10 @@ Example app listening at http://localhost:3000
 |User Registration|allows new user accounts to be made on the web program|Implementation for this feature followed making a dummy database storing fake users. We made users.js and users.mjs in order for the database to be able to connect to the local server. This feature uses db.js file to allow the user.js file to access the database from mongodb|Will be implemented on the client side of the program|The implementation of this feature is complete|Tests implemented but fails|
 |Login|User credential verification|This feature depends on the database module. It is using users.js and users.mjs. The implementation of this feature involves checking if a user has it's corresponding password in the database of users| Implementation is complete|The implementation of this feature is complete|Tests implemented but fails|
 
+###Client Side Features
 
-
+|Name|Description|Implementation Strategy|Dependencies|Completion Status|
+|-----|-----|-----|-----|-----|
+|Explore Page|This feature allows a user to explore through a map and have a look at the list of restaurants we have on our site. The user will be able to individually visit each restaurant's webpage and learn more about the place|In order to implement this feature, a page was created that shows the user a map of the city of St. John's that they can navigate through. The map also links to external websites such as google reviews and etc. Beside the map, a table has been placed that is connected to our database that contains all the records of the restaurants in our system. Every restaurant has its own individual page with additional information from our server including the type of cuisine, rating, location or mood of the place. These individual pages also have the restaurant's map along with some reviews of the restaurant that exist on our database.|This feature depends on the embedded google map frames into the page, it depends on the restaurants database along with the reviews database as well.|This feature has been fully completed and implemented.|
 
 
