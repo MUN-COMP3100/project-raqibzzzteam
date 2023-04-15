@@ -52,28 +52,30 @@ Project: PlateSpot
 <br/>
 
 ### Recreating Database on Local Machine
-1. open mongodb compass
-2. connect to local host mongodb://localhost:27017
-3. create a database titled "restaurant"
-4. create collection titled "stjohns"
-5. import csv file titled "restaurant.csv" into collection "restaurant"
-6. create collection titled "users"
-7. import csv file titled "users.csv" into collection "users"
+1. Replicate the repository locally
+2. download mongodb compass and postman
+3. open mongodb compass
+4. make a new database and create three new collections
+5. the first collection will be called "stjohns" and in this collection, import the restaurant.csv file
+6. the second collection will be called "users" and in this collection, import the users.csv file
+7. the third collection will be called "reviews" and in this collection, import the review.csv file
+8. open the project in Visual Studio Code and run app.js using "node app.js"
+9. open postman and connect to http://localhost:3001/restaurant to check if the database was connected to the server
+
+### Opening the Client Side
+1. Go to VS Code and install the extension Live Server
+2. Open index.html with the Live Server by right clicking it
+3. Once opened with live server, you should be able to access the whole web program
+
+note: ensure port:3001 is available
+
+#### To sign in use these credentials - 
+Username - johndoe , Password - Password123
+Username - sarahsmith , Password - MyP@ssword
 
 <br/>
 
-### Implementation Description
-note: ensure port:3000 is available
-
-1. download repo github.com/MUN-COMP3100/project-raqibzzzteam
-2. locate to Server Side/Restaurant Server/ 
-3. open terminal here
-4. command node app.js
-5. server should start
-Connected successfully to mongoDB
-Example app listening at http://localhost:3000  
-
-6. To shut down the server, ctrl+c in terminal
+To shut down the server, ctrl+c in terminal
 <br/>
  
 ## Feature Descriptions
