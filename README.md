@@ -8,6 +8,8 @@ Team member 2: Vilakshan Khanna, MUNID: vkhanna, GITHUB: vilakshankh
 Project: PlateSpot
 * There's been one too many times where you did not know where to go get food here in St. John's which is why we propose a small web application where users are able to view all their eating options in the city of St. John's based on only a few filters. Mood, rating, and cuisine type. Every Restaurant will have its own informations page where its location, menu, reviews and etc. will be displayed.
 
+### Here is the demo video - https://drive.google.com/file/d/1Qi_rBEQn87qgzuUNkyNzp0mf5oKvccLB/view?usp=sharing
+
 ## Project Feature Table
 
 ### Server Side (Yes)
@@ -69,7 +71,7 @@ Project: PlateSpot
 
 Another way to access the client side once the server is connected and live is to go to http://127.0.0.1:5500 on your browser
 
-note: ensure port:3001 is available
+**note**: ensure port:3001 is available
 
 #### To sign in use these credentials - 
 Username - johndoe , Password - Password123
