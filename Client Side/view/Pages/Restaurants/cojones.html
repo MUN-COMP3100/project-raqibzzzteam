@@ -7,7 +7,8 @@
 				body {
 			margin: 0;
 			padding: 0;
-			font-family: Arial, sans-serif;
+      text-align: left;
+			font-family: 'Courier New', Courier, monospace;
 		}
     h1 {
 
@@ -15,7 +16,7 @@
 			margin-bottom: 40px;
 			text-align: left;
 			color: #F0A04B;
-			font-family: 'MADE Sunflower', sans-serif;
+			
 		}
      h2 {
 			font-size: 50px;
@@ -27,6 +28,32 @@
 			font-size: 14px;
 			margin: 20px 0 10px 0;
 			text-align: left;
+		}
+    #resultTable {
+			
+			border-collapse: collapse;
+			width: 100%;
+			text-align: left;
+		}
+
+		#resultTable th {
+			background-color: #F0A04B;
+      text-align: left;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10px;
+			border-bottom: 2px solid #ddd;
+		}
+
+		#resultTable td {
+			font-size: 16px;
+      text-align: left;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		#resultTable tr:hover {
+			background-color: #f5f5f5;
 		}
 
     .left-column {
@@ -169,6 +196,7 @@
         object-fit: cover;
     }
 
+    li {color: #f2f2f2;}
 
 
 
@@ -185,10 +213,6 @@
           <a href="/Client Side/view/Pages/Maps/maps.html">Maps</a>
       </nav>
       <section class="first-section">
-
-
-      
-
 
           <div class="left-column">
             <h1 class="custom-heading" id="restaurant_name">Cojones</h1>
@@ -267,12 +291,36 @@
 
 
 
-      <section class = "third-section">
-        
-        <h2>Sample Menu</h2>
-        <h3>asdfasdfsdafsdafsdafasdf</h3>  
-
-        
-      </section>   
+      <section class="third-section">
+        <h2>Menu</h2>
+        <h3>Appetizers</h3>
+        <ul>
+          <li>Guacamole and Chips</li>
+          <li>Queso Fundido with Chorizo</li>
+          <li>Ceviche Tostadas</li>
+          <li>Elote (Grilled Corn) with Cotija Cheese and Chili Powder</li>
+        </ul>
+        <h3>Entrees</h3>
+        <ul>
+          <li>Carne Asada Tacos with Salsa Verde and Pickled Red Onions</li>
+          <li>Pork Carnitas with Cilantro, Onion, and Lime</li>
+          <li>Chicken Enchiladas with Mole Sauce</li>
+          <li>Shrimp and Scallop Fajitas with Bell Peppers and Onions</li>
+        </ul>
+        <h3>Side Dishes</h3>
+        <ul>
+          <li>Refried Beans with Queso Fresco</li>
+          <li>Spanish Rice with Tomatoes and Cilantro</li>
+          <li>Jicama Salad with Mango, Cucumber, and Lime</li>
+          <li>Grilled Vegetables with Chimichurri Sauce</li>
+        </ul>
+        <h3>Drinks</h3>
+        <ul>
+          <li>Margaritas - Classic, Mango, or Strawberry</li>
+          <li>Micheladas - Beer with Tomato Juice and Spices</li>
+          <li>Horchata - Sweet Rice Milk with Cinnamon</li>
+          <li>Jamaica - Hibiscus Tea with Sugar</li>
+        </ul>
+      </section>  
       <script src="/Client Side/view/Pages/Restaurants/reviews/reviews.js"></script>
   </body>

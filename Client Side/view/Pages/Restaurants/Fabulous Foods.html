@@ -7,7 +7,8 @@
 				body {
 			margin: 0;
 			padding: 0;
-			font-family: Arial, sans-serif;
+      text-align: left;
+			font-family: 'Courier New', Courier, monospace;
 		}
     h1 {
 
@@ -15,7 +16,7 @@
 			margin-bottom: 40px;
 			text-align: left;
 			color: #F0A04B;
-			font-family: 'MADE Sunflower', sans-serif;
+			
 		}
      h2 {
 			font-size: 50px;
@@ -27,6 +28,32 @@
 			font-size: 14px;
 			margin: 20px 0 10px 0;
 			text-align: left;
+		}
+    #resultTable {
+			
+			border-collapse: collapse;
+			width: 100%;
+			text-align: left;
+		}
+
+		#resultTable th {
+			background-color: #F0A04B;
+      text-align: left;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 10px;
+			border-bottom: 2px solid #ddd;
+		}
+
+		#resultTable td {
+			font-size: 16px;
+      text-align: left;
+			padding: 10px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		#resultTable tr:hover {
+			background-color: #f5f5f5;
 		}
 
     .left-column {
@@ -169,6 +196,7 @@
         object-fit: cover;
     }
 
+    li {color: #f2f2f2;}
 
 
 
@@ -178,7 +206,8 @@
       <!-- Navigation bar -->
       <nav class="navbar">
           <a href="/Client Side/view/Pages/home.html">Home</a>
-          
+          <a href="/Client Side/view/Pages/Searches/Cuisine Search/cuisine_search.html">Cuisine Search</a>
+
           <a href="/Client Side/view/Pages/Searches/Cuisine Search/cuisine_search.html">Cuisine Search</a>
           <a href="/Client Side/view/Pages/Searches/Mood Search/mood_search.html">Mood Search</a>
           <a href="/Client Side/view/Pages/Searches/Rating Search/rating_search.html">Rating Search</a>
@@ -186,25 +215,19 @@
       </nav>
       <section class="first-section">
 
-
-      
-
-
           <div class="left-column">
             <h1 class="custom-heading" id="restaurant_name">Fabulous Foods</h1>
             <div id="resultDiv">
               <h2></h2>
                 <table id="result">
-                  <thead>
+                  <tr>
                     <tr>
-                      
                       <th>Cuisine</th>
                       <th>Location</th>
                       <th>Mood</th>
                       <th>Rating</th>
                     </tr>
-                  </thead>
-                  <tbody></tbody>
+                  </tr>
                 </table>
             </div>
           </div>
@@ -260,7 +283,7 @@
             </div>
           </div>
           <div class="right-column">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.1777300678496!2d-52.725814223241166!3d47.56433029089499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca39811671267%3A0xd3a97eb185abc65f!2sFabulous%20Foods%20Limited!5e0!3m2!1sen!2sca!4v1681515850407!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.192572458033!2d-52.70940792324119!3d47.56404149091487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3d59f1cac35%3A0xa4b5ebd116ab689e!2sCojones%20Tacos%20%26%20Tequila!5e0!3m2!1sen!2sca!4v1681432551309!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
       </section>  
 
@@ -269,12 +292,36 @@
 
 
 
-      <section class = "third-section">
-        
-        <h2>Sample Menu</h2>
-        <h3>asdfasdfsdafsdafsdafasdf</h3>  
-
-        
-      </section>   
+      <section class="third-section">
+        <h2>Menu</h2>
+        <h3>Appetizers</h3>
+        <ul>
+          <li>Seafood Chowder with Fresh Atlantic Seafood</li>
+          <li>Battered Fish and Chips with Tartar Sauce</li>
+          <li>Moose Sliders with Cranberry Chutney</li>
+          <li>Brewis with Pork Scrunchions and Molasses</li>
+        </ul>
+        <h3>Entrees</h3>
+        <ul>
+          <li>Jiggs Dinner - Salt Beef with Root Vegetables and Pease Pudding</li>
+          <li>Flipper Pie - Savory Pie with Seal Meat</li>
+          <li>Caribou Stew with Potatoes and Carrots</li>
+          <li>Grilled Cod with Lemon Butter and Herbs</li>
+        </ul>
+        <h3>Side Dishes</h3>
+        <ul>
+          <li>Bakeapple Salad with Blueberries and Walnuts</li>
+          <li>Peas Pudding with Savory Pork Gravy</li>
+          <li>Savory Duff with Butter and Molasses</li>
+          <li>Boiled Potatoes with Parsley Butter</li>
+        </ul>
+        <h3>Drinks</h3>
+        <ul>
+          <li>Iceberg Beer - Made with Water from Icebergs</li>
+          <li>Screech Rum - A Dark Rum from Newfoundland</li>
+          <li>Bakeapple Martini - Vodka with Cloudberry Liqueur</li>
+          <li>Partridgeberry Tea - Herbal Tea with Berries</li>
+        </ul>
+      </section>
       <script src="/Client Side/view/Pages/Restaurants/reviews/reviews.js"></script>
   </body>
