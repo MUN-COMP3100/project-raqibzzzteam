@@ -69,7 +69,7 @@ Project: PlateSpot
 
 Another way to access the client side once the server is connected and live is to go to http://127.0.0.1:5500 on your browser
 
-note: ensure port:3001 is available
+**note**: ensure port:3001 is available
 
 #### To sign in use these credentials - 
 Username - johndoe , Password - Password123
